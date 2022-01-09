@@ -1,9 +1,10 @@
-import User from "./classes/user.js";
+import Artifact from "./classes/artifact.js";
 
-let user = new User("Jennifer Snay", "jennifer@web.de");
+let id = 3;
+let name = await Artifact.getName(id);
+let latitude = await Artifact.getLatitude(id);
+let longitude = await Artifact.getLongitude(id);
 
-//user.updateLevel(user.name);
-//user.insert();
-//user.all();
-//user.getID();
-user.all();
+console.log(`Name: ${name}`);
+console.log(`Latitude: ${latitude}`);
+console.log(`Longitude: ${longitude}`);

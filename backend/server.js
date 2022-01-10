@@ -8,9 +8,11 @@ app.get("/api", function (req, res) {
   res.json({ message: "Hello from Server" });
 });
 
-app.get("/api/getArtifactName", async function (req, res) {
-  const response = await Artifact.getName(1);
-  res.json({ message: response });
+app.get("/api/getArtifactData", async function (req, res) {
+  const name = await Artifact.getName(1);
+  const latitude = await Artifact.getLatitude(1);
+  const longitude = await Artifact.getLongitude(1);
+  res.json({ name: name, latitude: latitude, longitude: longitude });
 });
 
 app.listen(port, function () {

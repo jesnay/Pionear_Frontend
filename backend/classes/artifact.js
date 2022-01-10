@@ -35,9 +35,6 @@ class Artifact {
       });
     });
   }
-  test() {
-    console.log("Luca is cute");
-  }
 }
 
 module.exports = Artifact;

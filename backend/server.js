@@ -22,6 +22,8 @@ app.get("/api/getArtifactData", async function (req, res) {
 
 app.get("/api/getUserData", async function (req, res) {
   const name = await User.getName(18);
+  //const email = await User.getEmail(18);
+  //const level = await User.getLevel(18);
   res.json({ name: name });
 });
 

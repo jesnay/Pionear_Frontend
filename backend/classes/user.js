@@ -1,5 +1,5 @@
 const db = require("../database.js");
-//hier steht irgendein dummer kommentar
+
 class User {
   constructor() {}
 

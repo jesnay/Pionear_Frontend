@@ -22,7 +22,6 @@ app.get("/api/getArtifactData", async function (req, res) {
 
 app.get("/api/getUserData", async function (req, res) {
   const name = await User.getName(18);
-  //console.log(name);
   res.json({ name: name });
 });
 

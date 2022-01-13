@@ -1,5 +1,8 @@
 import React from "react";
 import "./App.css";
+//<p>{!artifact.name ? "Loading..." : artifact.name}</p>
+//<p>{!artifact.latitude ? "Loading..." : artifact.latitude}</p>
+//<p>{!artifact.longitude ? "Loading..." : artifact.longitude}</p>
 //import axios from "axios";
 
 function App() {
@@ -22,9 +25,7 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <p>{!artifact.name ? "Loading..." : artifact.name}</p>
-        <p>{!artifact.latitude ? "Loading..." : artifact.latitude}</p>
-        <p>{!artifact.longitude ? "Loading..." : artifact.longitude}</p>
+        <p>Hello</p>
       </header>
     </div>
   );

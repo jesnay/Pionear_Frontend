@@ -3,6 +3,24 @@ const db = require("../database.js");
 class Artifact {
   constructor() {}
 
+  static async getAll(id) {
+    return new Promise((resolve, reject) => {
+      db.get(
+        `SELECT name, latitude, longitude FROM artifacts WHERE id=${id};`,
+        (err, rows) => {
+          if (err) {
+            reject(err);
+          }
+          resolve({
+            name: rows.name,
+            latitude: rows.latitude,
+            longitude: rows.longitude,
+          });
+        }
+      );
+    });
+  }
+
   static async getName(id) {
     return new Promise((resolve, reject) => {
       db.get(`SELECT name FROM artifacts WHERE id=${id};`, (err, rows) => {

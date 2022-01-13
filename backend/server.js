@@ -9,23 +9,22 @@ app.get("/api", function (req, res) {
   res.json({ message: "Hello from Server" });
 });
 
-app.get("/api/getArtifactData", async function (req, res) {
-  const name = await Artifact.getName(1);
-  const latitude = await Artifact.getLatitude(1);
-  const longitude = await Artifact.getLongitude(1);
+app.get("/api/artifact/:id", async function (req, res) {
+  const id = req.params.id;
+  const artifact = await Artifact.getAll(id);
   res.json({
-    name: name,
-    latitude: latitude,
-    longitude: longitude,
+    name: artifact.name,
+    latitude: artifact.latitude,
+    longitude: artifact.longitude,
   });
 });
 
-app.get("/api/getUserData", async function (req, res) {
-  const name = await User.getName(18);
-  const email = await User.getEmail(18);
-  const level = await User.getLevel(18);
-  res.json({ name: name });
-  //console.log(name);
+app.get("/api/user/:id", async function (req, res) {
+  const id = req.params.id;
+  const name = await User.getName(id);
+  const email = await User.getEmail(id);
+  const level = await User.getLevel(id);
+  res.json({ name: name, email: email, level: level });
 });
 
 app.listen(port, function () {

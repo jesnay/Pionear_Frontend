@@ -1,7 +1,8 @@
 import React from "react";
 import "./App.css";
-
-
+//<p>{!artifact.name ? "Loading..." : artifact.name}</p>
+//<p>{!artifact.latitude ? "Loading..." : artifact.latitude}</p>
+//<p>{!artifact.longitude ? "Loading..." : artifact.longitude}</p>
 //import axios from "axios";
 
 function App() {
@@ -28,6 +29,7 @@ function App() {
         <p>{!user ? "Loading..." : user}</p>
         <p>{!artifact ? "Loading..." : artifact}</p>
       <button className="btn btn-primary">HELLO WORLD</button>
+        <p>Hello</p>
       </header>
     </div>
   );

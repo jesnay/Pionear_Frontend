@@ -17,13 +17,14 @@ app.get("/api/artifact/:id", async function (req, res) {
     latitude: artifact.latitude,
     longitude: artifact.longitude,
   });
+  console.log(artifact.name)
 });
 
 app.get("/api/user/:id", async function (req, res) {
-  const id = req.params.id;
-  const name = await User.getName(id);
-  const email = await User.getEmail(id);
-  const level = await User.getLevel(id);
+  const Userid = req.params.id;
+  const name = await User.getName(Userid);
+  const email = await User.getEmail(Userid);
+  const level = await User.getLevel(Userid);
   res.json({ name: name, email: email, level: level });
 });
 

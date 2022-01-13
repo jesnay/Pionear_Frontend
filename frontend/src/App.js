@@ -1,35 +1,29 @@
 import React from "react";
 import "./App.css";
-//<p>{!artifact.name ? "Loading..." : artifact.name}</p>
-//<p>{!artifact.latitude ? "Loading..." : artifact.latitude}</p>
-//<p>{!artifact.longitude ? "Loading..." : artifact.longitude}</p>
 //import axios from "axios";
 
+//? Zeile 30 <p> artifactName Warum funktioniert bei reload nicht, aber cut and paste funktioniert wieder
 function App() {
   const [artifact, setArtifact] = React.useState(null);
-  const [user, setUser] = React.useState(null);
+  
+let artifactID=1;
 
-  React.useEffect(() => {
-    fetch("/api/getArtifactData")
-      .then((res) => res.json())
-      .then((artifact) => setArtifact(artifact.name));
-  }, [])
+React.useEffect(() => {
+  fetch(`/api/artifact/${artifactID}`)
+    .then((res) => res.json())
+    .then((artifact) => setArtifact(artifact));
+}, [artifactID]);
   console.log("getartifactdata");
 
-  React.useEffect(() => {
-    fetch("/api/getUserData")
-      .then((res) => res.json())
-      .then((user) => setUser(user.name));
-  }, [])
+  
   console.log("getuserdata");
-
+  
   return (
     <div className="App">
       <header className="App-header">
-        <p>{!user ? "Loading..." : user}</p>
-        <p>{!artifact ? "Loading..." : artifact}</p>
-      <button className="btn btn-primary">HELLO WORLD</button>
+      <button onClick={console.log("hello")} className="btn btn-primary">HELLO WORLD</button>
         <p>Hello</p>
+        <p>{!artifact.name ? "Loading..." : artifact.name}</p>
       </header>
     </div>
   );

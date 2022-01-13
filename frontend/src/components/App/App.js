@@ -15,13 +15,12 @@ React.useEffect(() => {
 }, [artifactID]);
   console.log("getartifactdata");
 
-  
-  console.log("getuserdata");
+  //? warum werden die sachen zweimal aufgerufen? --> artifactID und der button bzw. eigentlich alles :D
   
   return (
     <div className="App">
       <header className="App-header">
-      <button onClick={console.log("hello")} className="btn btn-primary">HELLO WORLD</button>
+      <button onClick={console.log("hello world")} className="btn btn-primary">HELLO WORLD</button>
         <p>Hello</p>
         <p>{!artifact.name ? "Loading..." : artifact.name}</p>
       </header>

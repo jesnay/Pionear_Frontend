@@ -5,24 +5,29 @@ import "./App.css";
 //? Zeile 30 <p> artifactName Warum funktioniert bei reload nicht, aber cut and paste funktioniert wieder
 function App() {
   const [artifact, setArtifact] = React.useState(null);
-  
-let artifactID=1;
 
-React.useEffect(() => {
-  fetch(`/api/artifact/${artifactID}`)
-    .then((res) => res.json())
-    .then((artifact) => setArtifact(artifact));
-}, [artifactID]);
+  let artifactID = 1;
+
+  React.useEffect(() => {
+    fetch(`/api/artifact/${artifactID}`)
+      .then((res) => res.json())
+      .then((artifact) => setArtifact(artifact));
+  }, [artifactID]);
   console.log("getartifactdata");
 
   //? warum werden die sachen zweimal aufgerufen? --> artifactID und der button bzw. eigentlich alles :D
-  
+
   return (
     <div className="App">
       <header className="App-header">
-      <button onClick={console.log("hello world")} className="btn btn-primary">HELLO WORLD</button>
+        <button
+          onClick={console.log("hello world")}
+          className="btn btn-primary"
+        >
+          HELLO WORLD
+        </button>
         <p>Hello</p>
-        <p>{!artifact.name ? "Loading..." : artifact.name}</p>
+        {/* <p>{!artifact.name ? "Loading..." : artifact.name}</p> */}
       </header>
     </div>
   );

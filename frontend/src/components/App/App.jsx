@@ -22,13 +22,23 @@ function App() {
 
   return (
     <div className="App">
-      <header className="App-header">
-        <button onClick={test} className="btn btn-primary">
-          HELLO WORLD
-        </button>
-        <p>Hello!</p>
-        <p>{!artifact ? "Loading..." : artifact.name}</p>
-      </header>
+      <div className="container-md">
+        <header className="App-header">
+          <nav className="navbar">
+            <div className="container-fluid">
+              {" "}
+              {/* width at 100%*/}
+              <span className="navbar h1">
+                Doofenschmirtz Evil Incorporated
+              </span>
+            </div>
+          </nav>
+          <p>{!artifact ? "Loading..." : artifact.name}</p>
+          <button onClick={test} className="btn btn-primary">
+            I´m a button!
+          </button>
+        </header>
+      </div>
     </div>
   );
 }

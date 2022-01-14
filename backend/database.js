@@ -8,7 +8,7 @@ let myDatabase = new sqlite3.Database(
       console.log("FEHLER", err.message);
       return;
     }
-    console.log("Databse connected");
+    console.log("Database connected");
   }
 );
 

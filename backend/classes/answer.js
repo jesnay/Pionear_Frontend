@@ -4,19 +4,19 @@ class Answer {
   constructor() {}
 
   static async save(userID, answer, artifactID) {
-    // For schleife methode so oft aufrufen wie ergebnisse übergeben werden
-    console.log(answer);
     return new Promise((resolve, reject) => {
-      db.prepare(
+      const sql = db.prepare(
         `INSERT INTO answers (artifactID, answer, userID)
-        VALUES (${artifactID},"${answer}", ${userID});`,
-        (err, rows) => {
+      VALUES (?,?,?);`,
+        (err) => {
           if (err) {
             reject(err);
           }
           resolve("Data safed in Database");
         }
       );
+      sql.run(artifactID, answer, userID);
+      sql.finalize();
     });
   }
 }

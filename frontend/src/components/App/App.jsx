@@ -2,11 +2,11 @@ import React from "react";
 import "./App.css";
 //import axios from "axios";
 
-//? Zeile 30 <p> artifactName Warum funktioniert bei reload nicht, aber cut and paste funktioniert wieder
 function App() {
   let [artifact, setArtifact] = React.useState(null);
   console.log(artifact);
   let artifactID = 1;
+  let answer = { userID: 19, text: "I think its a dog", artifactID: 2 };
   function test() {
     console.log("Hello World");
   }
@@ -18,7 +18,15 @@ function App() {
   }, [artifactID]);
   console.log("getartifactdata");
 
-  //? warum werden die sachen zweimal aufgerufen? --> artifactID und der button bzw. eigentlich alles :D
+  React.useEffect(() => {
+    fetch(`/api/answer`, {
+      method: `POST`,
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(answer),
+    }).then(() => {
+      console.log("Answer added");
+    });
+  }, []);
 
   return (
     <div className="App">

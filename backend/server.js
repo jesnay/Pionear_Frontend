@@ -40,10 +40,12 @@ app.get("/api/user/:id", async function (req, res) {
 
 //*Save given Data into Database
 app.post("/api/answer", (req, res) => {
-  let answer = req.body.text;
   let userID = req.body.userID;
   let artifactID = req.body.artifactID;
-  Answer.save(userID, answer, artifactID);
+  let answer = req.body.text;
+  for (let i = 0; i < answer.length; i++) {
+    Answer.save(userID, answer[i], artifactID);
+  }
   res.send("Data safed");
 });
 

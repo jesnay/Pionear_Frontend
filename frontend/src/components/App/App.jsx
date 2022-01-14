@@ -6,7 +6,11 @@ function App() {
   let [artifact, setArtifact] = React.useState(null);
   console.log(artifact);
   let artifactID = 1;
-  let answer = { userID: 19, text: "I think its a dog", artifactID: 2 };
+  let answer = {
+    userID: 20,
+    text: ["Hier Antwort 1", "Hier Antwort 2", "Hier Antwort 3"],
+    artifactID: 5,
+  };
   function test() {
     console.log("Hello World");
   }

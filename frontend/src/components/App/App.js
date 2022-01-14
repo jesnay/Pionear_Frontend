@@ -10,6 +10,7 @@ function App() {
   function test() {
     console.log("Hello World");
   }
+
   React.useEffect(() => {
     fetch(`/api/artifact/${artifactID}`)
       .then((res) => res.json())

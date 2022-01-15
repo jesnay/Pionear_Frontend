@@ -4,26 +4,37 @@ import "./StationBeforeQuest.css";
 import Image1 from "./image_1.png";
 
 function App() {
-  let [artifact, setArtifact] = React.useState(null);
-  console.log(artifact);
-  let artifactID = 1;
+  let [station, setStation] = React.useState(null);
+  console.log(station);
+  let stationID = 4;
   let answer = {
     userID: 20,
-    text: ["Hier Antwort 1", "Hier Antwort 2", "Hier Antwort 3"],
-    artifactID: 5,
+    text: ["Eins", "Zwei", "Drei"],
+    stationID: 5,
   };
+
+  function saveToDatabase() {
+    console.log("Hello World");
+    fetch(`/api/answer`, {
+      method: `POST`,
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(answer),
+    });
+  }
+
   function test() {
     console.log("Hello World");
   }
 
   React.useEffect(() => {
-    fetch(`/api/artifact/${artifactID}`)
+    fetch(`/api/station/${stationID}`)
       .then((res) => res.json())
-      .then((artifact) => setArtifact(artifact));
-  }, [artifactID]);
-  console.log("getartifactdata");
+      .then((station) => setStation(station));
+  }, [stationID]);
+  console.log("getstationdata");
 
-  React.useEffect(() => {
+  //*mit React.useEffect
+  /*React.useEffect(() => {
     fetch(`/api/answer`, {
       method: `POST`,
       headers: { "Content-Type": "application/json" },
@@ -31,19 +42,20 @@ function App() {
     }).then(() => {
       console.log("Answer added");
     });
-  }, []);
+  }, []);*/
 
   return (
     <div className="App">
       <div className="App-header">
         {/* width at 100%*/}
-        <h1>{!artifact ? "Loading..." : artifact.name}</h1>
-        <p className="adress">{!artifact ? "Loading..." : artifact.adress}</p>
+        {/* //? Hier ist noch was faul */}
+        <h1>{!station ? "Loading..." : station.name}</h1>
+        <p className="adress">{!station ? "Loading..." : station.adress}</p>
       </div>
       <div className="images">
         <img src={Image1} alt="Image" />
       </div>
-      <div className="ArtifactInfo">
+      <div className="stationInfo">
         <p>
           <strong>Thema:</strong> Erinnerungspraktiken
         </p>

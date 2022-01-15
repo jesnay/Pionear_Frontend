@@ -3,10 +3,10 @@ const db = require("../database.js");
 class Answer {
   constructor() {}
 
-  static async save(userID, answer, artifactID) {
+  static async save(userID, answer, stationID) {
     return new Promise((resolve, reject) => {
       const sql = db.prepare(
-        `INSERT INTO answers (artifactID, answer, userID)
+        `INSERT INTO answers (stationID, answer, userID)
       VALUES (?,?,?);`,
         (err) => {
           if (err) {
@@ -15,7 +15,7 @@ class Answer {
           resolve("Data safed in Database");
         }
       );
-      sql.run(artifactID, answer, userID);
+      sql.run(stationID, answer, userID);
       sql.finalize();
     });
   }

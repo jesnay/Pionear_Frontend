@@ -3,26 +3,33 @@ import "./App.css";
 //import axios from "axios";
 
 function App() {
-  let [artifact, setArtifact] = React.useState(null);
-  console.log(artifact);
-  let artifactID = 1;
+  let [station, setStation] = React.useState(null);
+  console.log(station);
+  let stationID = 4;
   let answer = {
     userID: 20,
-    text: ["Hier Antwort 1", "Hier Antwort 2", "Hier Antwort 3"],
-    artifactID: 5,
+    text: ["Eins", "Zwei", "Drei"],
+    stationID: 5,
   };
-  function test() {
+
+  function saveToDatabase() {
     console.log("Hello World");
+    fetch(`/api/answer`, {
+      method: `POST`,
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(answer),
+    });
   }
 
   React.useEffect(() => {
-    fetch(`/api/artifact/${artifactID}`)
+    fetch(`/api/station/${stationID}`)
       .then((res) => res.json())
-      .then((artifact) => setArtifact(artifact));
-  }, [artifactID]);
-  console.log("getartifactdata");
+      .then((station) => setStation(station));
+  }, [stationID]);
+  console.log("getstationdata");
 
-  React.useEffect(() => {
+  //*mit React.useEffect
+  /*React.useEffect(() => {
     fetch(`/api/answer`, {
       method: `POST`,
       headers: { "Content-Type": "application/json" },
@@ -30,7 +37,7 @@ function App() {
     }).then(() => {
       console.log("Answer added");
     });
-  }, []);
+  }, []);*/
 
   return (
     <div className="App">
@@ -45,8 +52,8 @@ function App() {
               </span>
             </div>
           </nav>
-          <p>{!artifact ? "Loading..." : artifact.name}</p>
-          <button onClick={test} className="btn btn-primary">
+          <p>{!station ? "Loading..." : station.spot}</p>
+          <button onClick={saveToDatabase} className="btn btn-primary">
             I´m a button!
           </button>
         </header>

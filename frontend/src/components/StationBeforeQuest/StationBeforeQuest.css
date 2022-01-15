@@ -1,0 +1,58 @@
+.App {
+  text-align: center;
+}
+
+.App-header {
+  padding-left: 50px;
+  padding-right: 50px;
+  background-color: white;
+  font-size: calc(10px + 2vmin);
+  color: black;
+  text-align: left;
+  padding-top: 50px;
+}
+
+.h1 {
+  padding-top: 50px;
+  text-align: left;
+}
+
+.adress {
+  font-size: small;
+  text-align: left;
+}
+.ArtifactInfo {
+  padding-left: 50px;
+  padding-right: 50px;
+  text-align: left;
+  line-height: 15px;
+}
+
+.images {
+  display: flex;
+  justify-content: center;
+}
+
+img {
+  width: 75%;
+  margin-bottom: 20px;
+}
+.Line1 {
+  margin-right: 50px;
+  border: 2px solid black;
+  border-radius: 5px;
+  border-color: black;
+}
+
+.historicalText {
+  padding-left: 50px;
+  padding-right: 50px;
+  text-align: left;
+  line-height: 20px;
+}
+.Line2 {
+  margin-left: 50px;
+  border: 2px solid black;
+  border-radius: 5px;
+  border-color: black;
+}

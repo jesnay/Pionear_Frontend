@@ -49,7 +49,7 @@ function App() {
       <div className="App-header">
         {/* width at 100%*/}
         {/* //? Hier ist noch was faul */}
-        <h1>{!station ? "Loading..." : station.name}</h1>
+        <h1>{!station ? "Loading..." : station.spot}</h1>
         <p className="adress">{!station ? "Loading..." : station.adress}</p>
       </div>
       <div className="images">

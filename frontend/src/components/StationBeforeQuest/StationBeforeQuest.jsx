@@ -5,7 +5,7 @@ import Image1 from "./image_1.png";
 
 function App() {
   let [station, setStation] = React.useState(null);
-  console.log(station);
+
   let stationID = 4;
   let answer = {
     userID: 20,
@@ -14,6 +14,7 @@ function App() {
   };
 
   function saveToDatabase() {
+    //Einfügen in die Datei wo die Antwort ausgelesen wird
     console.log("Hello World");
     fetch(`/api/answer`, {
       method: `POST`,

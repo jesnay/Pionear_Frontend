@@ -30,8 +30,8 @@ function App() {
     fetch(`/api/station/${stationID}`)
       .then((res) => res.json())
       .then((station) => setStation(station));
-  }, [stationID]);
-  console.log("getstationdata");
+    console.log("getstationdata");
+  }, []);
 
   //*mit React.useEffect
   /*React.useEffect(() => {

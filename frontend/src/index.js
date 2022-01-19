@@ -1,13 +1,13 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import "./index.css";
-import App from "./pages/StationBeforeQuest/StationBeforeQuest.jsx";
+import StationBeforeQuest from "./pages/StationBeforeQuest/StationBeforeQuest.jsx";
 import reportWebVitals from "./reportWebVitals";
 import "bootstrap/dist/css/bootstrap.css";
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <StationBeforeQuest />
   </React.StrictMode>,
   document.getElementById("root")
 );

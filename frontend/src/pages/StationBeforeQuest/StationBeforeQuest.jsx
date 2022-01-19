@@ -2,49 +2,12 @@ import React from "react";
 import "./StationBeforeQuest.css";
 //import axios from "axios";
 import Image1 from "./image_1.png";
+import {GetStation, SetAnswer} from "../../ConnectionToDatabase";
 
 function App() {
-  let [station, setStation] = React.useState(null);
-
   let stationID = 4;
-  let answer = {
-    userID: 20,
-    text: ["Eins", "Zwei", "Drei"],
-    stationID: 5,
-  };
-
-  function saveToDatabase() {
-    //Einfügen in die Datei wo die Antwort ausgelesen wird
-    console.log("Hello World");
-    fetch(`/api/answer`, {
-      method: `POST`,
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify(answer),
-    });
-  }
-
-  function test() {
-    console.log("Hello World");
-  }
-
-  React.useEffect(() => {
-    fetch(`/api/station/${stationID}`)
-      .then((res) => res.json())
-      .then((station) => setStation(station));
-    console.log("getstationdata");
-  }, []);
-
-  //*mit React.useEffect
-  /*React.useEffect(() => {
-    fetch(`/api/answer`, {
-      method: `POST`,
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify(answer),
-    }).then(() => {
-      console.log("Answer added");
-    });
-  }, []);*/
-
+  let station=GetStation(stationID);
+  
   return (
     <div className="App">
       <div className="App-header">
@@ -79,7 +42,7 @@ function App() {
         </p>
       </div>
       <hr className="Line2"></hr>
-      <button onClick={test} className="btn btn-primary btn-sm">
+      <button onClick={SetAnswer} className="btn btn-primary btn-sm">
         START
       </button>
     </div>

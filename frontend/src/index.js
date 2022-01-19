@@ -1,7 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import "./index.css";
-import App from "./components/StationBeforeQuest/StationBeforeQuest.jsx";
+import App from "./pages/StationBeforeQuest/StationBeforeQuest.jsx";
 import reportWebVitals from "./reportWebVitals";
 import "bootstrap/dist/css/bootstrap.css";
 

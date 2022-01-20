@@ -36,7 +36,12 @@ function StationBeforeQuest() {
         <p>{!station ? "Loading..." : station.description}</p>
       </div>
       <hr className="Line2"></hr>
-      <button onClick={SetAnswer} className="btn btn-primary btn-sm">
+      <button
+        onClick={() => {
+          SetAnswer("abc");
+        }}
+        className="btn btn-primary btn-sm"
+      >
         START
       </button>
     </div>

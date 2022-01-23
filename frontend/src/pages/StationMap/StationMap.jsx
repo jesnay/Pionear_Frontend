@@ -1,3 +1,5 @@
+//*Folgende Google Map Integration funktioniert nur auf Jennifers Rechner. Die Google Map API funktioniert nur kostenpflichtig auf anderen Rechnern.
+
 import React from "react"; //imrc shortcut
 import Map from "google-map-react";
 import p3Style from "./MapStyle";

@@ -7,6 +7,11 @@ import { GetStation, SetAnswer } from "../../ConnectionToDatabase";
 function StationBeforeQuest() {
   let stationID = 4;
   let station = GetStation(stationID);
+  let answer = {
+    userID: 20,
+    text: ["Eins", "Zwei", "Drei"],
+    stationID: 5,
+  };
 
   return (
     <div className="App">
@@ -38,7 +43,7 @@ function StationBeforeQuest() {
       <hr className="Line2"></hr>
       <button
         onClick={() => {
-          SetAnswer("abc");
+          SetAnswer(answer);
         }}
         className="btn btn-primary btn-sm"
       >

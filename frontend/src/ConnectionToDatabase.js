@@ -24,19 +24,14 @@ function GetStation(stationID) {
   return station;
 }
 
-function SetAnswer() {
-  let answer = {
-    userID: 20,
-    text: ["Eins", "Zwei", "Drei"],
-    stationID: 5,
-  };
-
-  fetch(`/api/answer`, {
+function SetAnswer(answer) {
+  /*fetch(`/api/answer`, {
     method: `POST`,
     headers: { "Content-Type": "application/json" },
     body: JSON.stringify(answer),
-  });
+  });*/
   console.log("Hello");
+  console.log(answer.text);
 }
 
 export { GetStation, SetAnswer };

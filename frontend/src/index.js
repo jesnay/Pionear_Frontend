@@ -1,13 +1,13 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import "./index.css";
-import StationBeforeQuest from "./pages/StationBeforeQuest/StationBeforeQuest.jsx";
+import Map from "./pages/Map/Map.jsx";
 import reportWebVitals from "./reportWebVitals";
 import "bootstrap/dist/css/bootstrap.css";
 
 ReactDOM.render(
   <React.StrictMode>
-    <StationBeforeQuest />
+    <Map />
   </React.StrictMode>,
   document.getElementById("root")
 );

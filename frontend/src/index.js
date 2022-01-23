@@ -1,13 +1,13 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import "./index.css";
-import StationMap from "./pages/StationMap/StationMap.jsx";
+import Themata from "./pages/Themata/Themata.jsx";
 import reportWebVitals from "./reportWebVitals";
 import "bootstrap/dist/css/bootstrap.css";
 
 ReactDOM.render(
   <React.StrictMode>
-    <StationMap />
+    <Themata />
   </React.StrictMode>,
   document.getElementById("root")
 );

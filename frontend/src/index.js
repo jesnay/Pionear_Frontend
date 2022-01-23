@@ -1,13 +1,17 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import "./index.css";
-import Themata from "./pages/Themata/Themata.jsx";
+import {
+  QuestNoImage,
+  QuestImage,
+  QuestTextField,
+} from "./pages/StationQuest/StationQuest.jsx";
 import reportWebVitals from "./reportWebVitals";
 import "bootstrap/dist/css/bootstrap.css";
 
 ReactDOM.render(
   <React.StrictMode>
-    <Themata />
+    <QuestNoImage />
   </React.StrictMode>,
   document.getElementById("root")
 );

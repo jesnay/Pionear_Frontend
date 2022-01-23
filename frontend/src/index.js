@@ -1,13 +1,13 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import "./index.css";
-import Map from "./pages/Map/Map.jsx";
+import StationMap from "./pages/StationMap/StationMap.jsx";
 import reportWebVitals from "./reportWebVitals";
 import "bootstrap/dist/css/bootstrap.css";
 
 ReactDOM.render(
   <React.StrictMode>
-    <Map />
+    <StationMap />
   </React.StrictMode>,
   document.getElementById("root")
 );

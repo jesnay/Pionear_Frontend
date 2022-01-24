@@ -4,6 +4,16 @@
 h1 {
   padding-top: 20px;
 }
+.images {
+  display: flex;
+  justify-content: center;
+}
+
+img {
+  width: 300px;
+  border-radius: 15px;
+  margin-bottom: 20px;
+}
 .InfoText {
   text-align: left;
   padding-top: 20px;

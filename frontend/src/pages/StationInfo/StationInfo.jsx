@@ -1,5 +1,6 @@
 import React from "react";
-import Image1 from "../../assets/images/Stations/1_Olympia/image_1.png";
+import Image4 from "../../assets/images/Stations/4_Affordanz/image_4.png";
+import Audio4 from "../../assets/audio/4_Affordanz.mp3";
 import "./StationInfo.css";
 import { Carousel } from "react-bootstrap";
 
@@ -11,8 +12,15 @@ function StationInfo() {
         <p>Unibibliothek: Handschriften</p>
         <p>Plöck 107-109, 69117 Heidelberg</p>
       </div>
+      <div className="images">
+        <img src={Image4} alt="" />
+      </div>
       <div>
-        <img src={Image1} alt="" />
+        <audio controls>
+          <source src={Audio4} type="audio/ogg" />
+          <source src={Audio4} type="audio/mpeg" />
+          Your browser does not support the audio element.
+        </audio>
       </div>
       <div>
         <Carousel interval={null} className="InfoText">

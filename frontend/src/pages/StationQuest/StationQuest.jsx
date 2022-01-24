@@ -1,6 +1,7 @@
 import React from "react";
 import "./StationQuest.css";
 import icon_camera from "../../assets/images/Stations/4_Affordanz/icon_camera.png";
+import { Form } from "react-bootstrap";
 
 function QuestNoImage() {
   return (
@@ -39,6 +40,7 @@ function QuestImage() {
 }
 
 function QuestTextField() {
+  let [input, setInput] = React.useState(``);
   return (
     <div>
       <div>
@@ -48,7 +50,22 @@ function QuestTextField() {
           verschiedenen Perspektiven zu betrachten.
         </p>
       </div>
-      <div></div>
+      <div>
+        <Form>
+          <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
+            <Form.Label>Mögliche Affordanz</Form.Label>
+            <Form.Control
+              placeholder="z.B. Informationen liefern"
+              value={input}
+              onChange={(e) => setInput(e.target.value)}
+            />
+          </Form.Group>
+        </Form>
+      </div>
+      <div>
+        <p>{input}</p>
+      </div>
+
       <button>xxx</button>
     </div>
   );

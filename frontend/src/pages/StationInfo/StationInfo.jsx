@@ -1,11 +1,7 @@
 import React from "react";
 
 function StationInfo() {
-  return (
-    <div>
-      <p>StationInfo</p>
-    </div>
-  );
+  return <div></div>;
 }
 
 export default StationInfo;

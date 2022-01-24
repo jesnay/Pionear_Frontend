@@ -10,7 +10,7 @@ function StationMap() {
     <div>
       <div style={{ width: "100%", height: "550px" }}>
         <Map
-          bootstrapURLKeys={{ key: "AIzaSyBgkECoHHIPFaA1Ve7qCnApu7uGmX0MjIs" }}
+          bootstrapURLKeys={{ key: "hier Api key einfügen" }}
           defaultZoom={15}
           options={{ styles: p3Style }}
           defaultCenter={{ lat: 49.40989504148873, lng: 8.705914587125145 }}

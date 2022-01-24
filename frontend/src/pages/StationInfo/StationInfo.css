@@ -6,4 +6,24 @@ h1 {
 }
 .InfoText {
   text-align: left;
+  padding-top: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.carousel-item.active,
+.carousel-item-next,
+.carousel-item-prev {
+  display: block;
+}
+.carousel-inner {
+  min-height: 300px;
+  border-radius: 15px;
+  background-color: #b1b1b1;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 10px;
+}
+.StationBeenden {
+  margin-top: 20px;
+  margin-bottom: 20px;
 }

@@ -6,12 +6,13 @@ import {
   QuestImage,
   QuestTextField,
 } from "./pages/StationQuest/StationQuest.jsx";
+import StationInfo from "./pages/StationInfo/StationInfo.jsx";
 import reportWebVitals from "./reportWebVitals";
 import "bootstrap/dist/css/bootstrap.css";
 
 ReactDOM.render(
   <React.StrictMode>
-    <QuestNoImage />
+    <StationInfo />
   </React.StrictMode>,
   document.getElementById("root")
 );

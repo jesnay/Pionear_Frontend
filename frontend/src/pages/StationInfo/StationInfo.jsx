@@ -1,6 +1,7 @@
 import React from "react";
 import Image1 from "../../assets/images/Stations/1_Olympia/image_1.png";
 import "./StationInfo.css";
+import { Carousel } from "react-bootstrap";
 
 function StationInfo() {
   return (
@@ -13,44 +14,129 @@ function StationInfo() {
       <div>
         <img src={Image1} alt="" />
       </div>
-      <div className="InfoText">
-        <div>
-          <p>
-            <strong>Praktiken</strong>
-          </p>
-          <p>
-            Hier sehen wir das wohl prestigeträchtigste Artefakt der
-            Universitätsbibliothek, den Codex Manesse. Diese
-            Liederhandschriftensammlung entstand im frühen 14. Jahrhundert -
-            unserem Mittelalter. Dabei wurde die bis dato nur mündlich
-            überlieferte Tradition des deutschen Minnesanges verschriftlicht.
-            Mehr über diese Verschriftlichung, ihren Kontext und die
-            zugrundeliegenden Absichten zu erfahren gehört zu den
-            Fragestellungen des Sonderforschungsbereichs. Wieso hielten die
-            Sammler der Lieder deren Niederschrift plötzlich für notwendig?
-          </p>
-        </div>
-        <div>
-          <p>
-            <strong>Theoretischer Zusammenhang</strong>
-          </p>
-          <p>
-            Damit sind wir bei einem weiteren vom Sonderforschungsbereich
-            verwendeten Begriff angelangt – der Affordanz. Dabei geht es um „die
-            durch die physischen Eigenschaften eines Gegenstandes vorgegebenen
-            Nutzungsmöglichkeit(en).“ Das Konzept des amerikanischen
-            Wahrnehmungspsychologen James J. Gibson geht davon aus, dass Dinge
-            eine Handlung oder Handlungen aktiv anbieten. Ein Stuhl bietet
-            beispielsweise an, sich hinzusetzen. In der Archäologie findet das
-            Konzept mit Fokus auf die Funktionalität eines Objekts Anwendung.
-            Material, Beschaffenheit, Oberfläche und Form werden genauso wie
-            weitere materielle, visuelle und schriftliche Quellen untersucht, um
-            den wahrscheinlichen Nutzungscharakter zu rekonstruieren.
-          </p>
-        </div>
+      <div>
+        <Carousel interval={null} className="InfoText">
+          <Carousel.Item>
+            <p>
+              <strong>Praktiken</strong>
+            </p>
+            <p>
+              Hier sehen wir das wohl prestigeträchtigste Artefakt der
+              Universitätsbibliothek, den Codex Manesse. Diese
+              Liederhandschriftensammlung entstand im frühen 14. Jahrhundert -
+              unserem Mittelalter. Dabei wurde die bis dato nur mündlich
+              überlieferte Tradition des deutschen Minnesanges verschriftlicht.
+            </p>
+          </Carousel.Item>
+          <Carousel.Item>
+            <p>
+              Mehr über diese Verschriftlichung, ihren Kontext und die
+              zugrundeliegenden Absichten zu erfahren gehört zu den
+              Fragestellungen des Sonderforschungsbereichs. Wieso hielten die
+              Sammler der Lieder deren Niederschrift plötzlich für notwendig?
+              Schon damals hatten die Sammler einen Anspruch auf
+              Vollständigkeit. Heute gilt der Codex Manesse als die
+              umfangreichste deutsche
+            </p>
+          </Carousel.Item>
+          <Carousel.Item>
+            <p>
+              Liederhandschrift des Mittelalters. Trotzdem blieben von den 426
+              etwa ein Drittel der Seiten leer und zahlreiche wurden nur zum
+              Teil beschrieben. Es wurde also reichlich Platz gelassen.
+              Pergament war damals sehr teuer und die Herstellung eines Buches
+              ein zeitintensiver Prozess. Das gilt besonders für die vielen
+              farbenprächtigen Illustrationen. Genau diese Zeichnungen sind es,
+              die den Codex
+            </p>
+          </Carousel.Item>
+          <Carousel.Item>
+            <p>
+              heute so berühmt machen. Das Buch hat eine sehr wechselvolle
+              Besitzgeschichte, die zwar nicht immer nachvollzogen werden kann,
+              aber die heutigen Länder Schweiz, Niederlande, Frankreich und
+              Deutschland umfasst, so dass man in diesem Zusammenhang auch von
+              einer „Reise“ sprechen kann. Nach Heidelberg kam der Codex Manesse
+              1607, wo er in die ebenfalls berühmte Biblioteca Palatina
+            </p>
+          </Carousel.Item>
+          <Carousel.Item>
+            <p>
+              aufgenommen wurde. Dort blieb er jedoch nur 15 Jahre, denn 1622
+              stand während des 30jährigen Krieges die katholische Liga vor den
+              Toren Heidelbergs vor der der Codex Manesse in Sicherheit gebracht
+              wurde und schließlich über mehrere Stationen nach Paris gelangte.
+              Der Rest der Biblioteca Palatina wurde als Beute in den Vatikan
+              gebracht. Anschließend bemühten sich mehrere deutsche Herrscher
+              und
+            </p>
+          </Carousel.Item>
+          <Carousel.Item>
+            <p>
+              Fürsten den Codex Manesse zurück nach Heidelberg zu bringen, was
+              allerdings erst 1888 gelang. Gerade diese Bemühungen zeigen, welch
+              hohes Prestige mit dem Besitz des Buches einherging - es erlangte
+              eine Bedeutung über den bloßen immanenten Nutzungscharakter – dem
+              Lesen – hinaus.
+            </p>
+          </Carousel.Item>
+        </Carousel>
       </div>
-
-      <button>Station beenden</button>
+      <div>
+        <Carousel interval={null} className="InfoText">
+          <Carousel.Item>
+            <p>
+              <strong>Theoretischer Zusammenhang</strong>
+            </p>
+            <p>
+              Damit sind wir bei einem weiteren vom Sonderforschungsbereich
+              verwendeten Begriff angelangt – der Affordanz. Dabei geht es um
+              „die durch die physischen Eigenschaften eines Gegenstandes
+              vorgegebenen Nutzungsmöglichkeit(en).“ Das Konzept des
+              amerikanischen Wahrnehmungspsychologen James J.
+            </p>
+          </Carousel.Item>
+          <Carousel.Item>
+            <p>
+              Gibson geht davon aus, dass Dinge eine Handlung oder Handlungen
+              aktiv anbieten. Ein Stuhl bietet beispielsweise an, sich
+              hinzusetzen. In der Archäologie findet das Konzept mit Fokus auf
+              die Funktionalität eines Objekts Anwendung. Material,
+              Beschaffenheit, Oberfläche und Form werden genauso wie weitere
+              materielle, visuelle und schriftliche Quellen untersucht, um den
+              wahrscheinlichen
+            </p>
+          </Carousel.Item>
+          <Carousel.Item>
+            <p>
+              Nutzungscharakter zu rekonstruieren. In Bezug auf den Codex
+              Manesse sehen wir zudem, dass sich die Nutzungsmöglichkeiten im
+              Laufe der Zeit ändern. Zunächst ging es darum, eine Sammlung an
+              Liedern zu erstellen und den mündlichen Minnesang festzuhalten -
+              zu fixieren. Später konnte die Liedersammlung zum Lesen und
+              Auffinden von Informationen genutzt werden. Im Laufe
+            </p>
+          </Carousel.Item>
+          <Carousel.Item>
+            <p>
+              der Zeit wurde der Codex dann zu einem Prestigeobjekt, dessen
+              Besitz dem eigenen Ansehen nutzte. Heutzutage bietet sich der
+              Codex Manesse als Forschungsobjekt an, das von uns analysiert
+              werden kann. Im Rahmen einer Ausstellung wiederum ist seine
+              Nutzungsmöglichkeit, Geschichte zu vermitteln. An dieser Stelle
+              bot es sich übrigens an, den Codex Manesse zur Erklärung des
+              Begriffes der Affordanz zu nutzen.
+            </p>
+          </Carousel.Item>
+          <Carousel.Item>
+            <p></p>
+          </Carousel.Item>
+          <Carousel.Item>
+            <p></p>
+          </Carousel.Item>
+        </Carousel>
+      </div>
+      <button className="StationBeenden">Station beenden</button>
     </div>
   );
 }

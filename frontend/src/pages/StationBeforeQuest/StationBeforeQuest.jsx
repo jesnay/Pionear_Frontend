@@ -19,14 +19,16 @@ function StationBeforeQuest() {
   };
 
   return (
-    <div className="StationBeforeQuestV2">
+    <div className="StationBeforeQuest">
       <img className="Map" src={MapImg} alt="" />
 
       <div className="card">
         <div className="alignHeaderAndTime">
-          <h1>{!station ? "Loading..." : station.spot}</h1>
+          <h1>{!station ? "Loading..." : station.topic}</h1>
+          {/* //? ist noch nicht dynamisch */}
           <img src={timePlaceholder} className="timePlaceholder" alt="..." />
         </div>
+        <p className="spot">{!station ? "Loading..." : station.spot}</p>
         <p className="category">{!station ? "Loading..." : categoryID}</p>
 
         <div className="alignIconAndAdress">

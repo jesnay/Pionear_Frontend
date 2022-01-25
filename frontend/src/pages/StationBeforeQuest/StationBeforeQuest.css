@@ -1,18 +1,17 @@
-.StationBeforeQuestV2 {
+.StationBeforeQuest {
   position: relative;
 }
 
 .Map {
   position: absolute;
-  filter: blur(4px);
-  filter: brightness(50%);
+  filter: blur(4px) brightness(50%);
   width: 100%;
 }
 
 .card {
   top: 50px;
-  margin: auto;
-  width: 20rem;
+  margin: 0 auto;
+  width: 80%;
   background-color: white;
   border-radius: 15px;
 }
@@ -25,12 +24,20 @@
 .timePlaceholder {
   padding-right: 25px;
   padding-top: 25px;
+  padding-left: 50px;
+  display: block;
 }
 
 h1 {
   padding-left: 25px;
   padding-right: 25px;
   padding-top: 25px;
+  margin: 0;
+}
+
+.spot {
+  padding-left: 25px;
+  padding-right: 25px;
   margin: 0;
 }
 

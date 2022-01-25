@@ -1,54 +1,57 @@
 import React from "react";
+import MapImg from "../../assets/images/Map.png";
+import ImgStation from "../../assets/images/Stations/1_Olympia/image_1.png";
 import "./StationBeforeQuest.css";
-//import axios from "axios";
-import Image1 from "../../assets/images/Stations/1_Olympia/image_1.png";
 import { GetStation, SetAnswer } from "../../ConnectionToDatabase";
+import arrowDown from "../../assets/images/Icons/arrowDown.png";
+import locationImg from "../../assets/images/Icons/location.png";
+import timePlaceholder from "../../assets/images/Icons/time.png";
 
 function StationBeforeQuest() {
   let stationID = 4;
+  let categoryID = 1;
   let station = GetStation(stationID);
   let answer = {
     userID: 20,
     text: ["Eins", "Zwei", "Drei"],
     stationID: 5,
+    categoryID,
   };
 
   return (
-    <div className="App">
-      <div className="App-header">
-        {/* width at 100%*/}
-        {/* //? Hier ist noch was faul */}
-        <h1>{!station ? "Loading..." : station.spot}</h1>
-        <p className="adress">{!station ? "Loading..." : station.adress}</p>
-      </div>
-      <div className="images">
-        <img src={Image1} alt="" />
-      </div>
-      <div className="stationInfo">
-        <p>
-          <strong>Adresse:</strong> {!station ? "Loading..." : station.adress}
-        </p>
+    <div className="StationBeforeQuestV2">
+      <img className="Map" src={MapImg} alt="" />
 
-        <p>
-          <strong>Dauer:</strong> 5 Minuten
-        </p>
-        <p>
-          <strong>Autor:</strong> {!station ? "Loading..." : station.author}
-        </p>
+      <div className="card">
+        <div className="alignHeaderAndTime">
+          <h1>{!station ? "Loading..." : station.spot}</h1>
+          <img src={timePlaceholder} className="timePlaceholder" alt="..." />
+        </div>
+        <p className="category">{!station ? "Loading..." : categoryID}</p>
+
+        <div className="alignIconAndAdress">
+          <img src={locationImg} className="locationImg" alt="..." />
+          <p className="adress">{!station ? "Loading..." : station.adress}</p>
+        </div>
+
+        <img src={ImgStation} className="card-img-top mx-auto p-4" alt="..." />
+
+        <div className="card-body text-center">
+          <div className="historicalText">
+            <p className="">{!station ? "Loading..." : station.description}</p>
+          </div>
+
+          <button
+            onClick={() => {
+              SetAnswer(answer);
+            }}
+            className="button"
+          >
+            Starten
+          </button>
+        </div>
+        <img src={arrowDown} className="arrow" alt="..." />
       </div>
-      <hr className="Line1"></hr>
-      <div className="historicalText">
-        <p>{!station ? "Loading..." : station.description}</p>
-      </div>
-      <hr className="Line2"></hr>
-      <button
-        onClick={() => {
-          SetAnswer(answer);
-        }}
-        className="btn btn-primary btn-sm"
-      >
-        START
-      </button>
     </div>
   );
 }

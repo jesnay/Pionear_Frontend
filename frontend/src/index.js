@@ -6,14 +6,14 @@ import "./index.css";
 //   QuestImage,
 //   QuestTextField,
 // } from "./pages/StationQuest/StationQuest.jsx";
-import StationInfo from "./pages/StationInfo/StationInfo.jsx";
+// import StationInfo from "./pages/StationInfo/StationInfo.jsx";
 import reportWebVitals from "./reportWebVitals";
 import "bootstrap/dist/css/bootstrap.css";
-// import StationBeforeQuest_V2 from "./pages/StationBeforeQuest_V2/StationBeforeQuest_V2";
+import StationBeforeQuest from "./pages/StationBeforeQuest/StationBeforeQuest";
 
 ReactDOM.render(
   <React.StrictMode>
-    <StationInfo />
+    <StationBeforeQuest />
   </React.StrictMode>,
   document.getElementById("root")
 );

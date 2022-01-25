@@ -1,65 +1,86 @@
-@font-face {
-  font-family: "Outfit-Regular";
-  src: local("Outfit-Regular")
-    url("../../assets/font/static/fontsUsed/Outfit-Regular.ttf")
-    format("truetype");
+.StationBeforeQuestV2 {
+  position: relative;
 }
 
-.App {
-  text-align: center;
+.Map {
+  position: absolute;
+  filter: blur(4px);
+  filter: brightness(50%);
+  width: 100%;
 }
 
-.App-header {
-  padding-left: 50px;
-  padding-right: 50px;
+.card {
+  top: 50px;
+  margin: auto;
+  width: 20rem;
   background-color: white;
-  font-size: calc(10px + 2vmin);
-  color: black;
-  text-align: left;
-  padding-top: 50px;
+  border-radius: 15px;
 }
 
-.h1 {
-  padding-top: 50px;
+.alignHeaderAndTime {
+  display: flex;
+  align-items: center;
+}
+
+.timePlaceholder {
+  padding-right: 25px;
+  padding-top: 25px;
+}
+
+h1 {
+  padding-left: 25px;
+  padding-right: 25px;
+  padding-top: 25px;
+  margin: 0;
+}
+
+.category {
+  font-size: small;
   text-align: left;
+  padding-left: 25px;
+  padding-right: 25px;
+  margin-top: 7px;
+  margin-bottom: 7px;
+}
+
+.alignIconAndAdress {
+  display: flex;
+  align-items: center;
 }
 
 .adress {
-  font-size: small;
-  text-align: left;
-}
-.ArtifactInfo {
-  padding-left: 50px;
-  padding-right: 50px;
-  text-align: left;
-  line-height: 15px;
+  color: #267978;
+  padding-left: 7px;
+  padding-right: 25px;
+  margin-bottom: 0;
 }
 
-.images {
-  display: flex;
-  justify-content: center;
-}
-
-img {
-  width: 75%;
-  margin-bottom: 20px;
-}
-.Line1 {
-  margin-right: 50px;
-  border: 2px solid black;
-  border-radius: 5px;
-  border-color: black;
+.locationImg {
+  width: 15px;
+  margin-left: 25px;
 }
 
 .historicalText {
-  padding-left: 50px;
-  padding-right: 50px;
+  padding-left: 12px;
+  padding-right: 12px;
   text-align: left;
   line-height: 20px;
 }
-.Line2 {
-  margin-left: 50px;
-  border: 2px solid black;
-  border-radius: 5px;
-  border-color: black;
+.button {
+  background-color: #267978;
+  color: white;
+  border-radius: 40px;
+  border: none;
+  width: 60%;
+  height: 50px;
+  font-size: 20px;
+  box-shadow: 5px 10px 10px #bfbfbf;
+}
+
+.arrow {
+  height: auto;
+  width: 10%;
+  margin: 0 auto;
+  margin-top: 20px;
+  margin-bottom: 25px;
 }

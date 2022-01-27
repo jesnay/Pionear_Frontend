@@ -9,11 +9,11 @@ import "./index.css";
 // import StationInfo from "./pages/StationInfo/StationInfo.jsx";
 import reportWebVitals from "./reportWebVitals";
 import "bootstrap/dist/css/bootstrap.css";
-import StationBeforeQuest from "./pages/StationBeforeQuest/StationBeforeQuest";
+import StationMap from "./pages/StationMap/StationMap.jsx";
 
 ReactDOM.render(
   <React.StrictMode>
-    <StationBeforeQuest />
+    <StationMap />
   </React.StrictMode>,
   document.getElementById("root")
 );

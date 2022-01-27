@@ -6,6 +6,7 @@ import { GetStation, SetAnswer } from "../../ConnectionToDatabase";
 import arrowDown from "../../assets/images/Icons/arrowDown.png";
 import locationImg from "../../assets/images/Icons/location.png";
 import timePlaceholder from "../../assets/images/Icons/time.png";
+import exitIcon from "../../assets/images/Icons/exit.png";
 
 function StationBeforeQuest() {
   let stationID = 4;
@@ -23,13 +24,22 @@ function StationBeforeQuest() {
       <img className="Map" src={MapImg} alt="" />
 
       <div className="card">
+        <button
+          className="exitIcon"
+          onClick={() => {
+            SetAnswer(answer);
+          }}
+        >
+          <img src={exitIcon} alt="..." />
+        </button>
+
         <div className="alignHeaderAndTime">
           <h1>{!station ? "Loading..." : station.topic}</h1>
           {/* //? ist noch nicht dynamisch */}
+
           <img src={timePlaceholder} className="timePlaceholder" alt="..." />
         </div>
         <p className="spot">{!station ? "Loading..." : station.spot}</p>
-        <p className="category">{!station ? "Loading..." : categoryID}</p>
 
         <div className="alignIconAndAdress">
           <img src={locationImg} className="locationImg" alt="..." />
@@ -52,7 +62,14 @@ function StationBeforeQuest() {
             Starten
           </button>
         </div>
-        <img src={arrowDown} className="arrow" alt="..." />
+        <button
+          className="arrow"
+          onClick={() => {
+            SetAnswer(answer);
+          }}
+        >
+          <img src={arrowDown} alt="..." />
+        </button>
       </div>
     </div>
   );

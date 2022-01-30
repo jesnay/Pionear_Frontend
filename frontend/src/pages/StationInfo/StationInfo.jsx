@@ -16,7 +16,7 @@ function StationInfo() {
         <img src={Image4} alt="" />
       </div>
       <div>
-        <audio controls>
+        <audio controls="controls">
           <source src={Audio4} type="audio/ogg" />
           <source src={Audio4} type="audio/mpeg" />
           Your browser does not support the audio element.

@@ -1,11 +1,11 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import "./index.css";
-// import {
-//   QuestNoImage,
-//   QuestImage,
-//   QuestTextField,
-// } from "./pages/StationQuest/StationQuest.jsx";
+import {
+  QuestNoImage,
+  QuestImage,
+  QuestTextField,
+} from "./pages/StationQuest/StationQuest.jsx";
 // import StationInfo from "./pages/StationInfo/StationInfo.jsx";
 import reportWebVitals from "./reportWebVitals";
 import "bootstrap/dist/css/bootstrap.css";
@@ -13,7 +13,7 @@ import StationMap from "./pages/StationMap/StationMap.jsx";
 
 ReactDOM.render(
   <React.StrictMode>
-    <StationMap />
+    <QuestTextField />
   </React.StrictMode>,
   document.getElementById("root")
 );

@@ -2,6 +2,7 @@ import React from "react";
 import "./StationQuest.css";
 import icon_camera from "../../assets/images/Stations/4_Affordanz/icon_camera.png";
 import { Form } from "react-bootstrap";
+import QuestWave_V2 from "../../assets/images/Waves/QuestWave_V2.png";
 
 function QuestNoImage() {
   return (
@@ -43,9 +44,12 @@ function QuestTextField() {
   let [input, setInput] = React.useState(``);
   return (
     <div>
+      <div className="backgroundWave">
+        <img src={QuestWave_V2} alt="backgroundWave" />
+      </div>
       <div>
-        <h1>Aufgabe</h1>
-        <p>
+        <h1>Quest</h1>
+        <p className="questTask">
           Welchen Nutzen kann dieses Objekt haben? Versuche das Objekt aus
           verschiedenen Perspektiven zu betrachten.
         </p>
@@ -53,7 +57,7 @@ function QuestTextField() {
       <div>
         <Form>
           <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
-            <Form.Label>Mögliche Affordanz</Form.Label>
+            <Form.Label className="formLabel">Mögliche Affordanz</Form.Label>
             <Form.Control
               placeholder="z.B. Informationen liefern"
               value={input}

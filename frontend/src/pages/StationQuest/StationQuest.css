@@ -1,1 +1,21 @@
-
+.backgroundWave {
+  position: absolute;
+  width: 100%;
+  z-index: -1;
+}
+h1 {
+  color: rgba(245, 242, 235, 1);
+  padding-left: 30px;
+  padding-top: 30px;
+}
+.questTask {
+  color: rgba(245, 242, 235, 1);
+  padding-left: 30px;
+}
+.formLabel {
+  padding-left: 30px;
+  margin-top: 140px;
+}
+.form-control {
+  width: 50%;
+}

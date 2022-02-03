@@ -10,7 +10,6 @@ function StationInfo() {
       <div>
         <h1>Affordanz</h1>
         <p>Unibibliothek: Handschriften</p>
-        <p>Plöck 107-109, 69117 Heidelberg</p>
       </div>
       <div className="images">
         <img src={Image4} alt="" />
@@ -136,14 +135,9 @@ function StationInfo() {
               Begriffes der Affordanz zu nutzen.
             </p>
           </Carousel.Item>
-          <Carousel.Item>
-            <p></p>
-          </Carousel.Item>
-          <Carousel.Item>
-            <p></p>
-          </Carousel.Item>
         </Carousel>
       </div>
+
       <button className="StationBeenden">Station beenden</button>
     </div>
   );

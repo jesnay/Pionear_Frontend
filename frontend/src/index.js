@@ -6,7 +6,7 @@ import {
   QuestImage,
   QuestTextField,
 } from "./pages/StationQuest/StationQuest.jsx";
-// import StationInfo from "./pages/StationInfo/StationInfo.jsx";
+import StationInfo from "./pages/StationInfo/StationInfo.jsx";
 import reportWebVitals from "./reportWebVitals";
 import "bootstrap/dist/css/bootstrap.css";
 import StationMap from "./pages/StationMap/StationMap.jsx";
@@ -14,7 +14,7 @@ import StationBeforeQuest from "./pages/StationBeforeQuest/StationBeforeQuest.js
 
 ReactDOM.render(
   <React.StrictMode>
-    <QuestImage />
+    <StationInfo />
   </React.StrictMode>,
   document.getElementById("root")
 );

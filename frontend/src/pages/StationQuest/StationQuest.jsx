@@ -8,17 +8,21 @@ import QuestWave_V2 from "../../assets/images/Waves/QuestWave_V2.png";
 function QuestNoImage() {
   return (
     <div>
+      <div className="backgroundWave">
+        <img src={QuestWave_V2} alt="backgroundWave" />
+      </div>
       <div>
-        <h1>Aufgabe</h1>
-        <p>
+        <h1>Quest I</h1>
+        <p className="questTask">
           Bewege Dich durch die Unibibliothek. Suche Dir ein schrifttragendes
           Objekt Deiner Wahl aus und mache davon ein Foto.
         </p>
       </div>
-      <div>
-        <img src={icon_camera} alt="" />
+
+      <div className="image">
+        <img className="noImage" src={icon_camera} alt="" />
       </div>
-      <button>Ohne Foto</button>
+      <button className="buttonGrey">Ohne Foto</button>
     </div>
   );
 }

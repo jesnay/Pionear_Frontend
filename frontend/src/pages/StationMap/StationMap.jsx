@@ -32,3 +32,4 @@ export default StationMap;
 //           defaultCenter={{ lat: 49.40989504148873, lng: 8.705914587125145 }}
 //         />
 //       </div>
+//Alternative: openstreetmap oder normales Google Maps

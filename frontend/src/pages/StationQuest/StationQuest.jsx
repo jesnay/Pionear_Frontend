@@ -1,6 +1,7 @@
 import React from "react";
 import "./StationQuest.css";
 import icon_camera from "../../assets/images/Stations/4_Affordanz/icon_camera.png";
+import user_image from "../../assets/images/Stations/4_Affordanz/user_image.jpg";
 import { Form } from "react-bootstrap";
 import QuestWave_V2 from "../../assets/images/Waves/QuestWave_V2.png";
 
@@ -25,17 +26,20 @@ function QuestNoImage() {
 function QuestImage() {
   return (
     <div>
+      <div className="backgroundWave">
+        <img src={QuestWave_V2} alt="backgroundWave" />
+      </div>
       <div>
-        <h1>Aufgabe</h1>
-        <p>
+        <h1>Quest I</h1>
+        <p className="questTask">
           Bewege Dich durch die Unibibliothek. Suche Dir ein schrifttragendes
           Objekt Deiner Wahl aus und mache davon ein Foto.
         </p>
       </div>
-      <div>
-        <img src={icon_camera} alt="" />
+      <div className="image">
+        <img className="userImage" src={user_image} alt="" />
       </div>
-      <button>Weiter</button>
+      <button className="button">Weiter</button>
     </div>
   );
 }
@@ -48,7 +52,7 @@ function QuestTextField() {
         <img src={QuestWave_V2} alt="backgroundWave" />
       </div>
       <div>
-        <h1>Quest</h1>
+        <h1>Quest II</h1>
         <p className="questTask">
           Welchen Nutzen kann dieses Objekt haben? Versuche das Objekt aus
           verschiedenen Perspektiven zu betrachten.
@@ -70,7 +74,7 @@ function QuestTextField() {
         <p>{input}</p>
       </div>
 
-      <button>xxx</button>
+      <button className="button">Weiter</button>
     </div>
   );
 }

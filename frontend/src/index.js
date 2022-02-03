@@ -10,10 +10,11 @@ import {
 import reportWebVitals from "./reportWebVitals";
 import "bootstrap/dist/css/bootstrap.css";
 import StationMap from "./pages/StationMap/StationMap.jsx";
+import StationBeforeQuest from "./pages/StationBeforeQuest/StationBeforeQuest.jsx";
 
 ReactDOM.render(
   <React.StrictMode>
-    <QuestTextField />
+    <QuestImage />
   </React.StrictMode>,
   document.getElementById("root")
 );

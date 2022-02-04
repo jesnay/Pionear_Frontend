@@ -1,0 +1,8 @@
+@font-face {
+  font-family: "Outfit-Regular";
+  src: url(./assets/font/static/fontsUsed/Outfit-Regular.ttf) format("truetype");
+}
+
+body {
+  font-family: "Outfit-Regular" !important; /* important sollte hier noch raus, war nur mein test */
+}

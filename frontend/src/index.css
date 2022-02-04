@@ -3,6 +3,22 @@
   src: url(./assets/font/static/fontsUsed/Outfit-Regular.ttf) format("truetype");
 }
 
+@font-face {
+  font-family: "Outfit-Light";
+  src: url(./assets/font/static/fontsUsed/Outfit-Light.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "Outfit-SemiBold";
+  src: url(./assets/font/static/fontsUsed/Outfit-SemiBold.ttf)
+    format("truetype");
+}
+
+@font-face {
+  font-family: "Outfit-Thin";
+  src: url(./assets/font/static/fontsUsed/Outfit-Thin.ttf) format("truetype");
+}
+
 body {
   font-family: "Outfit-Regular" !important;
 }

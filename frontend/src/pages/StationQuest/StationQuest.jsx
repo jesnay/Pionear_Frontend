@@ -12,7 +12,7 @@ function QuestNoImage() {
         <img className="questWave" src={QuestWave_V2} alt="backgroundWave" />
       </div>
       <div>
-        <h1>Quest I</h1>
+        <h1 className="h1">Quest I</h1>
         <p className="questTask">
           Bewege Dich durch die Unibibliothek. Suche Dir ein schrifttragendes
           Objekt Deiner Wahl aus und mache davon ein Foto.
@@ -34,7 +34,7 @@ function QuestImage() {
         <img className="questWave" src={QuestWave_V2} alt="backgroundWave" />
       </div>
       <div>
-        <h1>Quest I</h1>
+        <h1 className="h1">Quest I</h1>
         <p className="questTask">
           Bewege Dich durch die Unibibliothek. Suche Dir ein schrifttragendes
           Objekt Deiner Wahl aus und mache davon ein Foto.
@@ -56,7 +56,7 @@ function QuestTextField() {
         <img className="questWave" src={QuestWave_V2} alt="backgroundWave" />
       </div>
       <div>
-        <h1>Quest II</h1>
+        <h1 className="h1">Quest II</h1>
         <p className="questTask">
           Welchen Nutzen kann dieses Objekt haben? Versuche das Objekt aus
           verschiedenen Perspektiven zu betrachten.

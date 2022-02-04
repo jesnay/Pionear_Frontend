@@ -8,8 +8,8 @@ import QuestWave_V2 from "../../assets/images/Waves/QuestWave_V2.png";
 function QuestNoImage() {
   return (
     <div>
-      <div className="backgroundWave">
-        <img src={QuestWave_V2} alt="backgroundWave" />
+      <div>
+        <img className="questWave" src={QuestWave_V2} alt="backgroundWave" />
       </div>
       <div>
         <h1>Quest I</h1>
@@ -30,8 +30,8 @@ function QuestNoImage() {
 function QuestImage() {
   return (
     <div>
-      <div className="backgroundWave">
-        <img src={QuestWave_V2} alt="backgroundWave" />
+      <div>
+        <img className="questWave" src={QuestWave_V2} alt="backgroundWave" />
       </div>
       <div>
         <h1>Quest I</h1>
@@ -52,8 +52,8 @@ function QuestTextField() {
   let [input, setInput] = React.useState(``);
   return (
     <div>
-      <div className="backgroundWave">
-        <img src={QuestWave_V2} alt="backgroundWave" />
+      <div>
+        <img className="questWave" src={QuestWave_V2} alt="backgroundWave" />
       </div>
       <div>
         <h1>Quest II</h1>

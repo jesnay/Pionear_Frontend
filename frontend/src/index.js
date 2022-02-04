@@ -14,7 +14,7 @@ import StationBeforeQuest from "./pages/StationBeforeQuest/StationBeforeQuest.js
 
 ReactDOM.render(
   <React.StrictMode>
-    <StationInfo />
+    <QuestTextField />
   </React.StrictMode>,
   document.getElementById("root")
 );

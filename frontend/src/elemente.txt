@@ -1,6 +1,6 @@
 <---------------Buttons--------------->
 //Größe
-width: fit-content; -> Haben die Buttons eine feste Größe oder machen wir passend zu dem Text?
+width: fit-content; 
 height: 50px;
 padding: 0px 20px 0px 20px;
 border-radius: 40px;
@@ -19,10 +19,10 @@ box-shadow: inset 0px 3px 5px rgba(53, 66, 89, 0.27);
 
 <---------------Text--------------->
 //heller Hintergrund
-color: rgba(0, 0, 0, 1); //heller Hintergrund -> nehmen wir schwarz oder dunkelblau?
+color: rgba(0, 0, 0, 1); //heller Hintergrund -> schwarz
 
 //dunkler Hintergrund
-color: rgba(245, 242, 235, 1); //dunkler Hintergrund
+color: rgba(255, 255, 255, 1); //dunkler Hintergrund -> weiss
 
 //h1
 font-family: "Outfit-SemiBold";

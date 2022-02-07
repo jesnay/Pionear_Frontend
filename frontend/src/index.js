@@ -1,12 +1,22 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import "./index.css";
+<<<<<<< Updated upstream
 import {
   QuestNoImage,
   QuestImage,
   QuestTextField,
 } from "./pages/StationQuest/StationQuest.jsx";
 import StationInfo from "./pages/StationInfo/StationInfo.jsx";
+=======
+// import {
+//   QuestNoImage,
+//   QuestImage,
+//   QuestTextField,
+// } from "./pages/StationQuest/StationQuest.jsx";
+// import StationInfo from "./pages/StationInfo/StationInfo.jsx";
+// import StationBeforeQuest from "./pages/StationBeforeQuest/StationBeforeQuest.jsx"
+>>>>>>> Stashed changes
 import reportWebVitals from "./reportWebVitals";
 import "bootstrap/dist/css/bootstrap.css";
 import StationMap from "./pages/StationMap/StationMap.jsx";
@@ -14,7 +24,7 @@ import StationBeforeQuest from "./pages/StationBeforeQuest/StationBeforeQuest.js
 
 ReactDOM.render(
   <React.StrictMode>
-    <QuestTextField />
+    <StationMap />
   </React.StrictMode>,
   document.getElementById("root")
 );

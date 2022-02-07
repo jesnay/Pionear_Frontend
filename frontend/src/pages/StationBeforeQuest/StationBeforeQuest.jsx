@@ -4,7 +4,7 @@ import ImgStation from "../../assets/images/Stations/1_Olympia/image_1.png";
 import "./StationBeforeQuest.css";
 import { GetStation, SetAnswer } from "../../ConnectionToDatabase";
 import arrowDown from "../../assets/images/Icons/arrowDown.png";
-import locationImg from "../../assets/images/Icons/location.png";
+import locationImg from "../../assets/images/Icons/location-inactive.png";
 import timePlaceholder from "../../assets/images/Icons/time.png";
 import exitIcon from "../../assets/images/Icons/exit.png";
 

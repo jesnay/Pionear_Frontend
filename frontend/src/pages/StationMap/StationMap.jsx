@@ -1,6 +1,8 @@
 import React from "react"; //imrc shortcut
 import "./StationMap.css";
 import Map from "../../assets/images/Map.png";
+import locationInactive from "../../assets/images/Icons/location-inactive.png";
+import locationActive from "../../assets/images/Icons/location-active.png";
 // import SimpleSlider from "../../components/Slide/SimpleSlider";
 
 function StationMap() {
@@ -10,8 +12,12 @@ function StationMap() {
       <div className="Map">
         <img src={Map} alt="Map" />
       </div>
-      <div className="container">
+      <div className="circle-container">
         <div className="circle"></div>
+      </div>
+      <div className="location-container">
+        <img className="inactive" src={locationInactive} alt="" />
+        <img className="active" src={locationActive} alt="" />
       </div>
     </div>
   );

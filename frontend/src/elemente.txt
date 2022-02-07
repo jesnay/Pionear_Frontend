@@ -1,0 +1,52 @@
+<---------------Buttons--------------->
+//Größe
+width: fit-content; -> Haben die Buttons eine feste Größe oder machen wir passend zu dem Text?
+height: 50px;
+padding: 0px 20px 0px 20px;
+border-radius: 40px;
+border: none;
+font-size: 20px;
+
+//abstehend
+background-color: rgba(38, 121, 120, 1);
+color: rgba(245, 242, 235, 1);
+box-shadow: 0px 8px 10px rgba(53, 66, 89, 0.27);
+
+//eingedrückt
+background-color: rgba(255, 255, 255, 1);
+color: rgba(53, 66, 89, 0.5);
+box-shadow: inset 0px 3px 5px rgba(53, 66, 89, 0.27);
+
+<---------------Text--------------->
+//heller Hintergrund
+color: rgba(0, 0, 0, 1); //heller Hintergrund -> nehmen wir schwarz oder dunkelblau?
+
+//dunkler Hintergrund
+color: rgba(245, 242, 235, 1); //dunkler Hintergrund
+
+//h1
+font-family: "Outfit-SemiBold";
+font-size: 32px;
+
+//Textblöcke
+font-family: "Outfit-Light";
+
+<---------------Bilder--------------->
+border-radius: 15px;
+
+<---------------Icons--------------->
+
+<---------------Hintergrund--------------->
+//Wellen
+border-radius: 0;
+position: absolute;
+width: 100%;
+z-index: -1;
+
+//Map scharf
+border-radius: 0;
+position: absolute;
+width: 100%;
+z-index: -1;
+
+//Map blured

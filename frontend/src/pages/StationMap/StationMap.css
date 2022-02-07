@@ -1,4 +1,9 @@
 @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro");
+/* 
+* {
+  overflow-x: hidden;
+  overflow-y: hidden;
+} */
 
 .StationMap {
   position: relative;
@@ -6,10 +11,10 @@
 
 .Map {
   position: absolute;
-  width: 100%;
+  width: 380px;
 }
 
-.container {
+.circle-container {
   margin: 0;
   height: 100vh;
   display: flex;
@@ -39,4 +44,15 @@
   100% {
     transform: scale(0.9);
   }
+}
+
+.location-container {
+  position: absolute;
+  display: flex;
+}
+
+.inactive {
+}
+
+.active {
 }

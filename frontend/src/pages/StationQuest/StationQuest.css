@@ -9,12 +9,15 @@
   padding-left: 30px;
   padding-top: 30px;
   font-family: "Outfit-SemiBold";
+  font-size: 32px !important;
 }
 .questTask {
   color: rgba(245, 242, 235, 1);
   padding-left: 30px;
-  width: 300px;
+  width: 340px;
   font-family: "Outfit-Thin";
+  font-size: 20px;
+  line-height: 25px;
 }
 .formLabel {
   padding-left: 30px;

@@ -9,7 +9,7 @@ import {
 import StationInfo from "./pages/StationInfo/StationInfo.jsx";
 import reportWebVitals from "./reportWebVitals";
 import "bootstrap/dist/css/bootstrap.css";
-import StationMap from "./pages/StationMap/StationMap.jsx";
+import StationMap from "./pages/Map/Map.jsx";
 import StationBeforeQuest from "./pages/StationBeforeQuest/StationBeforeQuest.jsx";
 
 ReactDOM.render(

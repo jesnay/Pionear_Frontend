@@ -1,5 +1,5 @@
 import React from "react"; //imrc shortcut
-import "./StationMap.css";
+import "./Map.module.css";
 import Map from "../../assets/images/Map.png";
 import locationInactive from "../../assets/images/Icons/location-inactive.png";
 import locationActive from "../../assets/images/Icons/location-active.png";

@@ -1,7 +1,7 @@
 import React from "react";
 import Image4 from "../../assets/images/Stations/4_Affordanz/image_4.png";
 import Audio4 from "../../assets/audio/4_Affordanz.mp3";
-import "./StationInfo.css";
+import "./StationInfo.module.css";
 import { Carousel } from "react-bootstrap";
 
 function StationInfo() {

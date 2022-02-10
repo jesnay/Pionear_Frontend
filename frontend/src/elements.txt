@@ -1,9 +1,20 @@
 <---------------Components--------------->
-Buttons (Outstanding, Pushed, Icon)
-Background-Image
-Typing Field
+Buttons (Outstanding, Pushed, Icon, Kategorieauswahl)
 Location Circle
-Location Pin
+Forms Typing Field (TextBox)
+CategoryCard
+PreviewCard
+Blurb (Klappentext)
+NavigateToDestination
+QuestIntro
+QuestTextBox
+QuestPhotoPreview
+InputAudio
+InputTextCarousel
+InputImageCarousel
+QuestAnswersPreview
+QuestAnswersCards
+QuestFinished
 
 <---------------Buttons--------------->
 //Größe

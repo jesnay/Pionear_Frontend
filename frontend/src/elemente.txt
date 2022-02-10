@@ -10,12 +10,14 @@ font-size: 20px;
 //abstehend
 background-color: rgba(38, 121, 120, 1);
 color: rgba(245, 242, 235, 1);
-box-shadow: 0px 8px 10px rgba(53, 66, 89, 0.27);
+box-shadow: 0px 8px 10px rgba(53, 66, 89, 0.25);
 
 //eingedrückt
 background-color: rgba(255, 255, 255, 1);
 color: rgba(53, 66, 89, 0.5);
-box-shadow: inset 0px 3px 5px rgba(53, 66, 89, 0.27);
+box-shadow: inset 0px 3px 5px rgba(53, 66, 89, 0.25);
+text-input-box: inset 0px 3px 10px rgba(53, 66, 89, 0.25);
+example-text-input-color: rgba(53, 66, 89, 0.25);
 
 <---------------Text--------------->
 //heller Hintergrund

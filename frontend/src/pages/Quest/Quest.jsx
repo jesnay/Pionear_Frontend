@@ -1,5 +1,5 @@
 import React from "react";
-import "./StationQuest.module.css";
+import "./Quest.module.css";
 import icon_camera from "../../assets/images/Stations/4_Affordanz/icon_camera.png";
 import user_image from "../../assets/images/Stations/4_Affordanz/user_image.jpg";
 import { Form } from "react-bootstrap";

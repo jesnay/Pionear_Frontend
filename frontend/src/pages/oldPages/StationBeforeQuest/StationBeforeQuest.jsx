@@ -2,7 +2,7 @@ import React from "react";
 import MapImg from "../../assets/images/Map.png";
 import ImgStation from "../../assets/images/Stations/1_Olympia/image_1.png";
 import "./StationBeforeQuest.module.css";
-import { GetStation, SetAnswer } from "../../ConnectionToDatabase";
+import { GetStation, SetAnswer } from "../../../ConnectionToDatabase";
 import arrowDown from "../../assets/images/Icons/arrowDown.png";
 import locationImg from "../../assets/images/Icons/location-inactive.png";
 import timePlaceholder from "../../assets/images/Icons/time.png";

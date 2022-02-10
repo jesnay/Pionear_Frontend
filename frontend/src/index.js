@@ -1,20 +1,20 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import "./index.css";
-import {
-  QuestNoImage,
-  QuestImage,
-  QuestTextField,
-} from "./pages/StationQuest/StationQuest.jsx";
-import StationInfo from "./pages/StationInfo/StationInfo.jsx";
+// import {
+//   QuestNoImage,
+//   QuestImage,
+//   QuestTextField,
+// } from "./pages/StationQuest/StationQuest.jsx";
+// import StationInfo from "./pages/StationInfo/StationInfo.jsx";
 import reportWebVitals from "./reportWebVitals";
 import "bootstrap/dist/css/bootstrap.css";
-import StationMap from "./pages/Map/Map.jsx";
-import StationBeforeQuest from "./pages/StationBeforeQuest/StationBeforeQuest.jsx";
+import Map from "./pages/Map/Map.jsx";
+// import StationBeforeQuest from "./pages/StationBeforeQuest/StationBeforeQuest.jsx";
 
 ReactDOM.render(
   <React.StrictMode>
-    <StationMap />
+    <Map />
   </React.StrictMode>,
   document.getElementById("root")
 );

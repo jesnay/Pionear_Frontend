@@ -1,0 +1,39 @@
+.Text {
+  text-align: left;
+  padding-top: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.carousel-item.active,
+.carousel-item-next,
+.carousel-item-prev {
+  display: block;
+}
+
+.carousel-inner {
+  min-height: 300px;
+  border-radius: 15px;
+  background-color: #c9dede;
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.16);
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 20px;
+}
+
+.carousel-indicators .active {
+  opacity: 1;
+  background-image: linear-gradient(
+    to right,
+    rgba(42, 109, 113, 1),
+    rgba(49, 85, 100, 1)
+  ) !important;
+  box-shadow: none !important;
+}
+.carousel-indicators [data-bs-target] {
+  width: 10px !important;
+  height: 10px !important;
+  opacity: 1 !important;
+  box-shadow: inset 0px 3px 6px #bfbfbf;
+  transition-property: box-shadow;
+  border-radius: 100% !important;
+}

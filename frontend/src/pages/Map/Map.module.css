@@ -5,11 +5,11 @@
   overflow-y: hidden;
 } */
 
-.StationMap {
+.Map {
   position: relative;
 }
 
-.Map {
+.MapImage {
   position: absolute;
   width: 380px;
 }

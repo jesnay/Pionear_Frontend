@@ -1,11 +1,12 @@
 import React from "react";
+import "./Category.module.css";
 
-function Themata() {
+function Category() {
   return (
     <div>
-      <p>Themaaaa</p>
+      <p>Hier die Category Componenten einfügen</p>
     </div>
   );
 }
 
-export default Themata;
+export default Category;

@@ -1,11 +1,27 @@
 import React from "react";
+import { Form } from "react-bootstrap";
 
-function QuestFinished() {
+function QuestTextBox() {
+  let [input, setInput] = React.useState(``);
   return (
     <div>
-      <p>Hier kommt der Haken rein, wenn du Quest beendet ist</p>
+      <div>
+        <Form>
+          <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
+            <Form.Label className="formLabel">Mögliche Affordanz</Form.Label>
+            <Form.Control
+              placeholder="z.B. Informationen liefern"
+              value={input}
+              onChange={(e) => setInput(e.target.value)}
+            />
+          </Form.Group>
+        </Form>
+      </div>
+      <div>
+        <p>{input}</p>
+      </div>
     </div>
   );
 }
 
-export default QuestFinished;
+export default QuestTextBox;

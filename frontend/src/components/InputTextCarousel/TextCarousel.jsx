@@ -1,4 +1,4 @@
-import "./TextCarousel.module.css";
+import "./TextCarousel.css";
 import React from "react";
 import { Carousel } from "react-bootstrap";
 
@@ -6,7 +6,7 @@ function TextCarousel() {
   return (
     <div>
       <div>
-        <Carousel interval={null} className="Text">
+        <Carousel interval={null} className="InfoText">
           <Carousel.Item>
             <p>
               <strong>Praktiken</strong>
@@ -72,58 +72,6 @@ function TextCarousel() {
           <Carousel.Item>
             <p>
               über den bloßen immanenten Nutzungscharakter – dem Lesen – hinaus.
-            </p>
-          </Carousel.Item>
-        </Carousel>
-      </div>
-      <div>
-        <Carousel interval={null} className="Text">
-          <Carousel.Item>
-            <p>
-              <strong>Theoretischer Zusammenhang</strong>
-            </p>
-            <p>
-              Damit sind wir bei einem weiteren vom Sonderforschungsbereich
-              verwendeten Begriff angelangt – der Affordanz. Dabei geht es um
-              „die durch die physischen Eigenschaften eines Gegenstandes
-              vorgegebenen Nutzungsmöglichkeit(en).“ Das Konzept des
-              amerikanischen Wahrnehmungspsychologen James J.
-            </p>
-          </Carousel.Item>
-          <Carousel.Item>
-            <p>
-              Gibson geht davon aus, dass Dinge eine Handlung oder Handlungen
-              aktiv anbieten. Ein Stuhl bietet beispielsweise an, sich
-              hinzusetzen. In der Archäologie findet das Konzept mit Fokus auf
-              die Funktionalität eines Objekts Anwendung. Material,
-              Beschaffenheit, Oberfläche und Form werden genauso wie weitere
-              materielle, visuelle und schriftliche Quellen untersucht,
-            </p>
-          </Carousel.Item>
-          <Carousel.Item>
-            <p>
-              um den wahrscheinlichen Nutzungscharakter zu rekonstruieren. In
-              Bezug auf den Codex Manesse sehen wir zudem, dass sich die
-              Nutzungsmöglichkeiten im Laufe der Zeit ändern. Zunächst ging es
-              darum, eine Sammlung an Liedern zu erstellen und den mündlichen
-              Minnesang festzuhalten - zu fixieren. Später konnte die
-              Liedersammlung zum Lesen und Auffinden
-            </p>
-          </Carousel.Item>
-          <Carousel.Item>
-            <p>
-              von Informationen genutzt werden. Im Laufe der Zeit wurde der
-              Codex dann zu einem Prestigeobjekt, dessen Besitz dem eigenen
-              Ansehen nutzte. Heutzutage bietet sich der Codex Manesse als
-              Forschungsobjekt an, das von uns analysiert werden kann. Im Rahmen
-              einer Ausstellung wiederum ist seine Nutzungsmöglichkeit,
-              Geschichte zu vermitteln. An dieser Stelle
-            </p>
-          </Carousel.Item>
-          <Carousel.Item>
-            <p>
-              bot es sich übrigens an, den Codex Manesse zur Erklärung des
-              Begriffes der Affordanz zu nutzen.
             </p>
           </Carousel.Item>
         </Carousel>

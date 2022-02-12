@@ -11,10 +11,11 @@ import reportWebVitals from "./reportWebVitals";
 import "bootstrap/dist/css/bootstrap.css";
 import Map from "./pages/Map/Map.jsx";
 // import StationBeforeQuest from "./pages/StationBeforeQuest/StationBeforeQuest.jsx";
+import Test from "./pages/Test/Test.jsx";
 
 ReactDOM.render(
   <React.StrictMode>
-    <Map />
+    <Test />
   </React.StrictMode>,
   document.getElementById("root")
 );

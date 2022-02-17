@@ -1,6 +1,6 @@
 import React from "react";
 import { Form } from "react-bootstrap";
-import "./QuestTextBox.css";
+import "./QuestTextBox.module.css";
 
 function QuestTextBox() {
   let [input, setInput] = React.useState(``);

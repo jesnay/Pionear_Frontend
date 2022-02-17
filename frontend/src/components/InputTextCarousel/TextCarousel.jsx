@@ -1,6 +1,6 @@
-import "./TextCarousel.css";
 import React from "react";
 import { Carousel } from "react-bootstrap";
+import "./TextCarousel.module.css";
 
 function TextCarousel({
   title,

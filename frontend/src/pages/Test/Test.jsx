@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { TextCarousel } from "../../components/InputTextCarousel/TextCarousel.jsx";
-import { QuestTextBox } from "../../components/QuestTextBox/QuestTextBox.jsx";
+import  TextCarousel  from "../../components/InputTextCarousel/TextCarousel.jsx";
+import  QuestTextBox  from "../../components/QuestTextBox/QuestTextBox.jsx";
 
 // import "../../components/QuestTextBox/QuestTextBox.module.css";
 // import "../../components/InputTextCarousel/TextCarousel.module.css";

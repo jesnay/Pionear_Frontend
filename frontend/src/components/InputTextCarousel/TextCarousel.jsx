@@ -1,6 +1,6 @@
-import "./TextCarousel.css";
 import React from "react";
 import { Carousel } from "react-bootstrap";
+import styles from "./TextCarousel.module.css";
 
 function TextCarousel({
   title,
@@ -14,9 +14,9 @@ function TextCarousel({
 }) {
   return (
     <div>
-      <div>
-        <Carousel interval={null} className="InfoText">
-          <Carousel.Item>
+      <div className="TextCarousel">
+        <Carousel interval={null} className={styles.InfoText}>
+          <Carousel.Item className={styles.carouselcolor}>
             <p>
               <strong>{title}</strong>
             </p>

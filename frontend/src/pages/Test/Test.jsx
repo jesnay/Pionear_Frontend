@@ -1,12 +1,14 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import TextCarousel from "../../components/InputTextCarousel/TextCarousel.jsx";
 import QuestTextBox from "../../components/QuestTextBox/QuestTextBox.jsx";
-import { Link } from "react-router-dom";
+
+// import "../../components/QuestTextBox/QuestTextBox.module.css";
+// import "../../components/InputTextCarousel/TextCarousel.module.css";
 
 function Test() {
   return (
     <div>
-      <QuestTextBox></QuestTextBox>
       <TextCarousel
         title="Praktiken"
         paragraph1="Hier sehen wir das wohl prestigeträchtigste Artefakt der

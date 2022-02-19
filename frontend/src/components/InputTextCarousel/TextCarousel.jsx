@@ -14,34 +14,32 @@ function TextCarousel({
 }) {
   return (
     <div>
-      <div className="TextCarousel">
-        <Carousel interval={null} className={styles.InfoText}>
-          <Carousel.Item className={styles.carouselcolor}>
-            <p>
-              <strong>{title}</strong>
-            </p>
-            <p>{paragraph1}</p>
-          </Carousel.Item>
-          <Carousel.Item>
-            <p>{paragraph2}</p>
-          </Carousel.Item>
-          <Carousel.Item>
-            <p>{paragraph3}</p>
-          </Carousel.Item>
-          <Carousel.Item>
-            <p>{paragraph4}</p>
-          </Carousel.Item>
-          <Carousel.Item>
-            <p>{paragraph5}</p>
-          </Carousel.Item>
-          <Carousel.Item>
-            <p>{paragraph6}</p>
-          </Carousel.Item>
-          <Carousel.Item>
-            <p>{paragraph7}</p>
-          </Carousel.Item>
-        </Carousel>
-      </div>
+      <Carousel interval={null} className={styles.InfoText}>
+        <Carousel.Item className={styles.carouselcolor}>
+          <p>
+            <strong>{title}</strong>
+          </p>
+          <p>{paragraph1}</p>
+        </Carousel.Item>
+        <Carousel.Item>
+          <p>{paragraph2}</p>
+        </Carousel.Item>
+        <Carousel.Item>
+          <p>{paragraph3}</p>
+        </Carousel.Item>
+        <Carousel.Item>
+          <p>{paragraph4}</p>
+        </Carousel.Item>
+        <Carousel.Item>
+          <p>{paragraph5}</p>
+        </Carousel.Item>
+        <Carousel.Item>
+          <p>{paragraph6}</p>
+        </Carousel.Item>
+        <Carousel.Item>
+          <p>{paragraph7}</p>
+        </Carousel.Item>
+      </Carousel>
     </div>
   );
 }

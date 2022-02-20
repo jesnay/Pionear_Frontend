@@ -15,10 +15,8 @@ function TextCarousel({
   return (
     <div>
       <Carousel interval={null} className={styles.InfoText}>
-        <Carousel.Item className={styles.carouselcolor}>
-          <p>
-            <strong>{title}</strong>
-          </p>
+        <Carousel.Item>
+          <p className={styles.title}>{title}</p>
           <p>{paragraph1}</p>
         </Carousel.Item>
         <Carousel.Item>

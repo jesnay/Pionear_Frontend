@@ -13,7 +13,14 @@ import img3 from "../../assets/images/Stations/4_Affordanz/input_image_3.png";
 function Test() {
   return (
     <div>
-      <ImageCarousel img1={img1} img2={img2} img3={img3} />
+      <QuestTextBox />
+    </div>
+  );
+}
+
+export default Test;
+
+/*<ImageCarousel img1={img1} img2={img2} img3={img3} />
       <TextCarousel
         title="Praktiken"
         paragraph1="Hier sehen wir das wohl prestigeträchtigste Artefakt der
@@ -57,9 +64,4 @@ function Test() {
         <Link to="/map">
           <button>Go to Map</button>
         </Link>
-      </div>
-    </div>
-  );
-}
-
-export default Test;
+      </div>*/

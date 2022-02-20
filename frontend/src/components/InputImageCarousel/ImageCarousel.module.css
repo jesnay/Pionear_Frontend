@@ -1,0 +1,21 @@
+img {
+  height: 300px;
+  width: 300px;
+  border-radius: 15px;
+}
+
+.Image :global .owl-stage-outer {
+  margin-top: 20px;
+}
+.Image :global .item {
+  width: 300px !important;
+  height: 300px !important;
+  opacity: 0.4;
+  transform: scale3d(0.8, 0.8, 1);
+  transition: all 0.3s ease-in-out;
+}
+
+.Image :global .owl-item.active.center .item {
+  opacity: 1;
+  transform: scale3d(1, 1, 1);
+}

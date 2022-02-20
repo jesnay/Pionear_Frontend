@@ -2,6 +2,10 @@ import React from "react";
 import { Link } from "react-router-dom";
 import TextCarousel from "../../components/InputTextCarousel/TextCarousel.jsx";
 import QuestTextBox from "../../components/QuestTextBox/QuestTextBox.jsx";
+import ImageCarousel from "../../components/InputImageCarousel/ImageCarousel.jsx";
+import img1 from "../../assets/images/Stations/4_Affordanz/input_image_1.png";
+import img2 from "../../assets/images/Stations/4_Affordanz/input_image_2.png";
+import img3 from "../../assets/images/Stations/4_Affordanz/input_image_3.png";
 
 // import "../../components/QuestTextBox/QuestTextBox.module.css";
 // import "../../components/InputTextCarousel/TextCarousel.module.css";
@@ -9,6 +13,7 @@ import QuestTextBox from "../../components/QuestTextBox/QuestTextBox.jsx";
 function Test() {
   return (
     <div>
+      <ImageCarousel img1={img1} img2={img2} img3={img3} />
       <TextCarousel
         title="Praktiken"
         paragraph1="Hier sehen wir das wohl prestigeträchtigste Artefakt der
@@ -47,7 +52,7 @@ function Test() {
               diese Bemühungen zeigen, welch hohes Prestige mit dem Besitz des
               Buches einherging - es erlangte eine Bedeutung"
         paragraph7="über den bloßen immanenten Nutzungscharakter – dem Lesen – hinaus."
-      ></TextCarousel>
+      />
       <div>
         <Link to="/map">
           <button>Go to Map</button>

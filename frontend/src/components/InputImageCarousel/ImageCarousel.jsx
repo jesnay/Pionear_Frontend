@@ -1,6 +1,7 @@
 import styles from "./ImageCarousel.module.css";
 import React from "react";
-//import { Carousel } from "react-bootstrap";
+import { Carousel } from "react-bootstrap";
+
 import OwlCarousel from "react-owl-carousel";
 import "owl.carousel/dist/assets/owl.carousel.css";
 import "owl.carousel/dist/assets/owl.theme.default.css";

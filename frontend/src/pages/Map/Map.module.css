@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro");
+/* @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro"); */
 /* 
 * {
   overflow-x: hidden;
@@ -11,10 +11,11 @@
 
 .MapImage {
   position: absolute;
-  width: 380px;
+  width: 100%;
+  height: auto;
 }
 
-.circle-container {
+.circleContainer {
   margin: 0;
   height: 100vh;
   display: flex;
@@ -46,10 +47,15 @@
   }
 }
 
-.location-container {
+.PreviewCard {
+  position: relative;
+  margin-top: -330px;
+}
+
+/* .location-container {
   position: absolute;
   display: flex;
-}
+} */
 
 /* .inactive {
 }

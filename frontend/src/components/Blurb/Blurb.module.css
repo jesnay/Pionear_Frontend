@@ -2,6 +2,7 @@
   position: absolute;
   filter: blur(4px) brightness(50%);
   width: 100%;
+  height: auto;
 }
 
 .Blurb {
@@ -41,6 +42,8 @@
   float: right;
   display: block;
   position: relative;
+  width: 100px;
+  height: auto;
 }
 
 h1 {
@@ -70,6 +73,7 @@ h1 {
 .WalkingImg {
   position: absolute;
   width: 12px;
+  height: auto;
   margin-left: 40px;
   margin-top: -30px;
 }
@@ -82,17 +86,9 @@ h1 {
   font-size: 18px;
 }
 
-/* .category {
-    font-size: small;
-    text-align: left;
-    padding-left: 25px;
-    padding-right: 25px;
-    margin-top: 7px;
-    margin-bottom: 7px;
-  } */
-
 .locationImg {
   width: 30px;
+  height: auto;
 }
 
 .historicalText {

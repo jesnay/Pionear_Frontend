@@ -6,7 +6,7 @@ import "./index.css";
 //   QuestImage,
 //   QuestTextField,
 // } from "./pages/StationQuest/StationQuest.jsx";
-import Blurb from "./components/Blurb/Blurb.jsx";
+import Map from "./pages/Map/Map.jsx";
 import reportWebVitals from "./reportWebVitals";
 import "bootstrap/dist/css/bootstrap.css";
 // import Map from "./pages/Map/Map.jsx";
@@ -15,7 +15,7 @@ import App from "./App.js";
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <Map />
   </React.StrictMode>,
   document.getElementById("root")
 );

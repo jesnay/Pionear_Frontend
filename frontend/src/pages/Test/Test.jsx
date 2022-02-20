@@ -2,6 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import TextCarousel from "../../components/InputTextCarousel/TextCarousel.jsx";
 import QuestTextBox from "../../components/QuestTextBox/QuestTextBox.jsx";
+import QuestTextBoxInput from "../../components/QuestTextBoxInput/QuestTextBoxInput.jsx";
 import ImageCarousel from "../../components/InputImageCarousel/ImageCarousel.jsx";
 import img1 from "../../assets/images/Stations/4_Affordanz/input_image_1.png";
 import img2 from "../../assets/images/Stations/4_Affordanz/input_image_2.png";
@@ -11,9 +12,16 @@ import img3 from "../../assets/images/Stations/4_Affordanz/input_image_3.png";
 // import "../../components/InputTextCarousel/TextCarousel.module.css";
 
 function Test() {
+  let [input, setInput] = React.useState(``);
+
+  const handleCallback = (childData) => {
+    setInput(childData);
+  };
   return (
     <div>
-      <QuestTextBox />
+      <QuestTextBox func={handleCallback} />
+
+      <QuestTextBoxInput input={input} />
     </div>
   );
 }

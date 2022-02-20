@@ -6,10 +6,10 @@ import "./index.css";
 //   QuestImage,
 //   QuestTextField,
 // } from "./pages/StationQuest/StationQuest.jsx";
-// import StationInfo from "./pages/StationInfo/StationInfo.jsx";
+import Blurb from "./components/Blurb/Blurb.jsx";
 import reportWebVitals from "./reportWebVitals";
 import "bootstrap/dist/css/bootstrap.css";
-import Map from "./pages/Map/Map.jsx";
+// import Map from "./pages/Map/Map.jsx";
 // import StationBeforeQuest from "./pages/StationBeforeQuest/StationBeforeQuest.jsx";
 import App from "./App.js";
 

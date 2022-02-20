@@ -1,12 +1,12 @@
 import React from "react";
 import MapImg from "../../assets/images/Map.png";
 import ImgStation from "../../assets/images/Stations/1_Olympia/image_1.png";
-import "./StationBeforeQuest.module.css";
-import { GetStation, SetAnswer } from "../../../ConnectionToDatabase";
-import arrowDown from "../../assets/images/Icons/arrowDown.png";
-import locationImg from "../../assets/images/Icons/location-inactive.png";
+import styles from "./Blurb.module.css";
+import { GetStation, SetAnswer } from "../../ConnectionToDatabase.js";
+import ImgWalk from "../../assets/images/Icons/walking.png";
+import locationImg from "../../assets/images/Icons/location-active.png";
 import timePlaceholder from "../../assets/images/Icons/time.png";
-import exitIcon from "../../assets/images/Icons/exit.png";
+// import exitIcon from "../../assets/images/Icons/exit.png";
 
 function Blurb() {
   let stationID = 4;
@@ -20,56 +20,50 @@ function Blurb() {
   };
 
   return (
-    <div className="StationBeforeQuest">
-      <img className="Map" src={MapImg} alt="" />
+    <div className={styles.Blurb}>
+      <img className={styles.Map} src={MapImg} alt="" />
 
-      <div className="card">
+      <div className={styles.card}>
+        <button className={styles.exitButton}>X</button>
+        <h1>{!station ? "Loading..." : station.topic}</h1>
+        {/* //? ist noch nicht dynamisch */}
+
+        <img
+          src={timePlaceholder}
+          className={styles.timePlaceholder}
+          alt="..."
+        />
+
+        <p className={styles.spot}>{!station ? "Loading..." : station.spot}</p>
+
+        <img src={ImgStation} className={styles.stationImage} alt="..." />
+        <div className="WalkingTime-Container">
+          <img src={ImgWalk} className={styles.WalkingImg} alt="" />
+          <p className={styles.WalkingText}>0 min</p>
+        </div>
+
+        <div>
+          <p className={styles.historicalText}>
+            {!station ? "Loading..." : station.description}
+          </p>
+        </div>
+
         <button
-          className="exitIcon"
           onClick={() => {
             SetAnswer(answer);
           }}
+          className={styles.button}
         >
-          <img src={exitIcon} alt="..." />
+          Station beginnen
         </button>
 
-        <div className="alignHeaderAndTime">
-          <h1>{!station ? "Loading..." : station.topic}</h1>
-          {/* //? ist noch nicht dynamisch */}
-
-          <img src={timePlaceholder} className="timePlaceholder" alt="..." />
+        <div className={styles.alignIconAndAdress}>
+          <img src={locationImg} className={styles.locationImg} alt="..." />
+          <p className={styles.adress}>
+            {/* {!station ? "Loading..." : station.adress} */}
+            in deiner näheren Umgebung
+          </p>
         </div>
-        <p className="spot">{!station ? "Loading..." : station.spot}</p>
-
-        <div className="alignIconAndAdress">
-          <img src={locationImg} className="locationImg" alt="..." />
-          <p className="adress">{!station ? "Loading..." : station.adress}</p>
-        </div>
-
-        <img src={ImgStation} className="card-img-top mx-auto p-4" alt="..." />
-
-        <div className="card-body text-center">
-          <div className="historicalText">
-            <p className="">{!station ? "Loading..." : station.description}</p>
-          </div>
-
-          <button
-            onClick={() => {
-              SetAnswer(answer);
-            }}
-            className="button"
-          >
-            Starten
-          </button>
-        </div>
-        <button
-          className="arrow"
-          onClick={() => {
-            SetAnswer(answer);
-          }}
-        >
-          <img src={arrowDown} alt="..." />
-        </button>
       </div>
     </div>
   );

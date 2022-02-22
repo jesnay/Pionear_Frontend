@@ -13,7 +13,7 @@ function PreviewCard() {
 
   return (
     <div className={styles.PreviewCard}>
-      <button className={styles.PreviewButton}>
+      {/* <button className={styles.PreviewButton}> */}
         {/* <Blurb></Blurb> */}
         {/* <Link path="/blurb"></Link> */}
         <img className={styles.PreviewImg} src={StationImg} alt="" />
@@ -30,7 +30,7 @@ function PreviewCard() {
             </p>
           </div>
         </div>
-      </button>
+      {/* </button> */}
     </div>
   );
 }

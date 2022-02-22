@@ -7,6 +7,7 @@ import ImgStation from "../../assets/images/Stations/4_Affordanz/Rechteck 609.pn
 import ImgWalk from "../../assets/images/Icons/walking.png";
 import locationImg from "../../assets/images/Icons/location-active.png";
 import timePlaceholder from "../../assets/images/Icons/time.png";
+import CloseButton from "../../assets/buttons/closing-Button.png";
 // import exitIcon from "../../assets/images/Icons/exit.png";
 
 function Blurb() {
@@ -22,10 +23,10 @@ function Blurb() {
 
   return (
     <div className={styles.Blurb}>
-      <img className={styles.Map} src={MapImg} alt="" />
+      {/* <img className={styles.Map} src={MapImg} alt="" /> */}
 
       <div className={styles.card}>
-        <button className={styles.exitButton}>X</button>
+        <img src={CloseButton} className={styles.closeButton} alt="close"/>
         <h1>{!station ? "Loading..." : station.topic}</h1>
         {/* //? ist noch nicht dynamisch */}
 
@@ -61,7 +62,6 @@ function Blurb() {
         <div className={styles.alignIconAndAdress}>
           <img src={locationImg} className={styles.locationImg} alt="..." />
           <p className={styles.adress}>
-            {/* {!station ? "Loading..." : station.adress} */}
             in deiner näheren Umgebung
           </p>
         </div>

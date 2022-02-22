@@ -1,18 +1,24 @@
 /* @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro"); */
-/* 
-* {
-  overflow-x: hidden;
-  overflow-y: hidden;
-} */
+
 
 .Map {
   position: relative;
+  position:fixed;
 }
 
 .MapImage {
   position: absolute;
   width: 100%;
   height: auto;
+  position:fixed;
+}
+
+.CategoryButton{
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  display:block;
+  top:100px
 }
 
 .circleContainer {
@@ -47,18 +53,36 @@
   }
 }
 
+.Blurb{
+  position: relative;
+  margin-top: -920px;
+}
+
 .PreviewCard {
   position: relative;
-  margin-top: -330px;
+  margin-top: -370px;
 }
 
-/* .location-container {
-  position: absolute;
-  display: flex;
-} */
+.location-container {
+  position: relative;
+} 
 
-/* .inactive {
+.active{
+  position: relative;
+  height: 50px;
+  left:80px;
+  top: 370px;
 }
 
-.active {
-} */
+.inactive1{
+  position: relative;
+  height: 50px;
+  left:250px;
+  top:400px;
+}
+.inactive2{
+  position: relative;
+  height: 50px;
+  left:295px;
+  top:300px;
+}

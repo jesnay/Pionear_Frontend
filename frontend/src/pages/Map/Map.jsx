@@ -1,6 +1,6 @@
 import React from "react";
 import styles from "./Map.module.css";
-// import PreviewCard from "../../components/PreviewCard/PreviewCard.jsx";
+import PreviewCard from "../../components/PreviewCard/PreviewCard.jsx";
 import Blurb from "../../components/Blurb/Blurb.jsx";
 
 import MapImage from "../../assets/images/Map.png";

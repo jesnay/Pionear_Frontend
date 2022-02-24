@@ -14,22 +14,22 @@ function PreviewCard() {
   return (
     <div className={styles.PreviewCard}>
       {/* <button className={styles.PreviewButton}> */}
-        {/* <Blurb></Blurb> */}
-        {/* <Link path="/blurb"></Link> */}
-        <img className={styles.PreviewImg} src={StationImg} alt="" />
-        <div className={styles.Text}>
-          <h1>{!station ? "Loading..." : station.topic}</h1>
-          <p className={styles.Question}>
-            Wie können Schriften eine Affordanz bieten?
-          </p>
+      {/* <Blurb></Blurb> */}
+      {/* <Link path="/blurb"></Link> */}
+      <img className={styles.PreviewImg} src={StationImg} alt="" />
+      <div className={styles.Text}>
+        <h1>{!station ? "Loading..." : station.topic}</h1>
+        <p className={styles.Question}>
+          Wie können Schriften eine Affordanz bieten?
+        </p>
 
-          <div className={styles.alignIconAndAdress}>
-            <img src={locationImg} className={styles.locationImg} alt="..." />
-            <p className={styles.adress}>
-              {!station ? "Loading..." : station.adress}
-            </p>
-          </div>
+        <div className={styles.alignIconAndAdress}>
+          <img src={locationImg} className={styles.locationImg} alt="..." />
+          <p className={styles.adress}>
+            {!station ? "Loading..." : station.adress}
+          </p>
         </div>
+      </div>
       {/* </button> */}
     </div>
   );

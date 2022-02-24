@@ -26,7 +26,7 @@ function Blurb() {
       {/* <img className={styles.Map} src={MapImg} alt="" /> */}
 
       <div className={styles.card}>
-        <img src={CloseButton} className={styles.closeButton} alt="close"/>
+        <img src={CloseButton} className={styles.closeButton} alt="close" />
         <h1>{!station ? "Loading..." : station.topic}</h1>
         {/* //? ist noch nicht dynamisch */}
 
@@ -61,9 +61,7 @@ function Blurb() {
 
         <div className={styles.alignIconAndAdress}>
           <img src={locationImg} className={styles.locationImg} alt="..." />
-          <p className={styles.adress}>
-            in deiner näheren Umgebung
-          </p>
+          <p className={styles.adress}>in deiner näheren Umgebung</p>
         </div>
       </div>
     </div>

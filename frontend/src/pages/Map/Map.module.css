@@ -1,24 +1,26 @@
 /* @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro"); */
 
-
 .Map {
   position: relative;
-  position:fixed;
+  position: fixed;
 }
 
 .MapImage {
   position: absolute;
   width: 100%;
   height: auto;
-  position:fixed;
+  position: fixed;
 }
 
-.CategoryButton{
+.CategoryButton {
+  width: 50px;
+  height: auto;
   position: relative;
   margin-left: auto;
   margin-right: auto;
-  display:block;
-  top:100px
+  display: block;
+  top: 100px;
+  /* border-radius: 0px; */
 }
 
 .circleContainer {
@@ -53,9 +55,9 @@
   }
 }
 
-.Blurb{
+.Blurb {
   position: relative;
-  margin-top: -920px;
+  margin-top: -1040px;
 }
 
 .PreviewCard {
@@ -65,24 +67,27 @@
 
 .location-container {
   position: relative;
-} 
+}
 
-.active{
+.active {
   position: relative;
+  width: 40px;
   height: 50px;
-  left:80px;
+  left: 80px;
   top: 370px;
 }
 
-.inactive1{
+.inactive1 {
   position: relative;
+  width: 40px;
   height: 50px;
-  left:250px;
-  top:400px;
+  left: 250px;
+  top: 400px;
 }
-.inactive2{
+.inactive2 {
   position: relative;
+  width: 40px;
   height: 50px;
-  left:295px;
-  top:300px;
+  left: 295px;
+  top: 300px;
 }

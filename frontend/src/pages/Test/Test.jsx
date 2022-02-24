@@ -12,15 +12,15 @@ import img3 from "../../assets/images/Stations/4_Affordanz/input_image_3.png";
 // import "../../components/InputTextCarousel/TextCarousel.module.css";
 
 function Test() {
-  let [input, setInput] = React.useState(``);
+  let [input, setInput] = React.useState([]);
 
   const handleCallback = (childData) => {
-    setInput(childData);
+    setInput([...input, { childData }]);
   };
+
   return (
     <div>
       <QuestTextBox func={handleCallback} />
-
       <QuestTextBoxInput input={input} />
     </div>
   );

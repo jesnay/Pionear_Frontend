@@ -7,6 +7,7 @@ function QuestTextBox(props) {
 
   const handleSubmit = (e) => {
     e.preventDefault();
+    setInput("");
   };
   return (
     <div>

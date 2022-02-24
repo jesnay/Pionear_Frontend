@@ -1,11 +1,14 @@
 .UserInput {
   background-color: rgba(201, 222, 222, 1);
   width: fit-content;
-  height: 38px;
+  max-width: 370px;
+  height: fit-content;
   border-radius: 12px;
   text-align: center;
   padding-top: 5px;
+  padding-bottom: 5px;
   padding-left: 20px;
   padding-right: 20px;
   font-size: 18px;
+  text-align: left;
 }

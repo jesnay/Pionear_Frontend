@@ -8,28 +8,20 @@ import img1 from "../../assets/images/Stations/4_Affordanz/input_image_1.png";
 import img2 from "../../assets/images/Stations/4_Affordanz/input_image_2.png";
 import img3 from "../../assets/images/Stations/4_Affordanz/input_image_3.png";
 
-// import "../../components/QuestTextBox/QuestTextBox.module.css";
-// import "../../components/InputTextCarousel/TextCarousel.module.css";
-
 function Test() {
   let [input, setInput] = React.useState([]);
 
   const handleCallback = (childData) => {
-    setInput([...input, { childData }]);
+    if (childData !== "" && childData.trim().length !== 0) {
+      setInput([...input, { childData }]);
+    }
   };
 
   return (
     <div>
-      <QuestTextBox func={handleCallback} />
-      <QuestTextBoxInput input={input} />
-    </div>
-  );
-}
-
-export default Test;
-
-/*<ImageCarousel img1={img1} img2={img2} img3={img3} />
-      <TextCarousel
+      {/*<QuestTextBox func={handleCallback} />*/}
+      {<ImageCarousel img1={img1} img2={img2} img3={img3} />}
+      {/*<TextCarousel
         title="Praktiken"
         paragraph1="Hier sehen wir das wohl prestigeträchtigste Artefakt der
               Universitätsbibliothek, den Codex Manesse. Diese
@@ -67,9 +59,12 @@ export default Test;
               diese Bemühungen zeigen, welch hohes Prestige mit dem Besitz des
               Buches einherging - es erlangte eine Bedeutung"
         paragraph7="über den bloßen immanenten Nutzungscharakter – dem Lesen – hinaus."
-      />
-      <div>
-        <Link to="/map">
+      />*/}
+      {/*<Link to="/map">
           <button>Go to Map</button>
-        </Link>
-      </div>*/
+    </Link>*/}
+    </div>
+  );
+}
+
+export default Test;

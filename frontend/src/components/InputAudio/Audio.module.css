@@ -1,0 +1,16 @@
+.Audio {
+  width: 290px;
+  height: 40px;
+}
+
+audio::-webkit-media-controls-panel {
+  background-color: rgb(255, 255, 255);
+}
+
+audio::-webkit-media-controls-play-button {
+  color: aqua;
+}
+
+audio::-webkit-media-controls-mute-button {
+  display: none;
+}

@@ -39,7 +39,7 @@
   height: auto;
 }
 
-h1 :global {
+.card :global h1 {
   padding-left: 30px;
   padding-right: 30px;
   padding-top: 50px;

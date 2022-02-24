@@ -39,7 +39,7 @@
   height: auto;
 }
 
-h1 {
+h1 :global {
   padding-left: 30px;
   padding-right: 30px;
   padding-top: 50px;
@@ -79,7 +79,7 @@ h1 {
   font-size: 18px;
 }
 
-.locationImg {
+.locationImg :global {
   width: 30px;
   height: auto;
 }
@@ -95,7 +95,7 @@ h1 {
   font-family: "Outfit-Light";
 }
 
-.button {
+.button :global {
   background-color: rgba(53, 66, 89, 1);
   color: white;
   border-radius: 40px;

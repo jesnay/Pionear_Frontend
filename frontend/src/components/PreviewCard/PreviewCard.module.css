@@ -27,7 +27,7 @@
 .PreviewImg {
   position: relative;
   border-radius: 15px;
-  width: 100%;
+  width: 100% !important;
   /* margin: 0px 0px 0px 0px; */
   /* object-position: 0px 120px; */
   object-fit: contain;
@@ -41,14 +41,14 @@
   display: block;
 }
 
-h1 {
+.Text :global h1 {
   padding-top: 40px !important;
   font-family: "Outfit-SemiBold";
   font-size: 32px;
   margin-bottom: 0;
 }
 
-.Question {
+.Text :global .Question {
   font-family: "Outfit-Light";
   line-height: 25px;
   font-size: 18px;
@@ -69,7 +69,7 @@ h1 {
   font-family: "Outfit-Regular";
 }
 
-.locationImg {
+.alignIconAndAdress :global .locationImg {
   width: 30px;
   height: auto;
 }

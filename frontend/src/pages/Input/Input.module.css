@@ -1,4 +1,4 @@
-.Header :global h1 {
+.Input :global h1 {
   font-family: "Outfit-SemiBold";
   font-size: 32px;
   padding-left: 30px;
@@ -6,15 +6,15 @@
   margin-bottom: 0px;
 }
 
-.spot {
+.Input :global .spot {
   padding-left: 30px;
   font-size: 14px;
 }
 
-.ImageCarousel {
+.Input :global .ImageCarousel {
   margin-top: 40px;
 }
-.InputAudio {
+.Input :global .InputAudio {
   margin-top: 30px;
   display: block;
   margin-left: auto;
@@ -22,9 +22,9 @@
   width: 70%;
 }
 
-.TextCarousel1 {
+.Input :global .TextCarousel1 {
   margin-top: 55px;
 }
-.TextCarousel2 {
+.Input :global .TextCarousel2 {
   margin-top: 40px;
 }

@@ -9,18 +9,18 @@ import Audio from "../../components/InputAudio/Audio.jsx";
 
 function Input() {
   return (
-    <div>
-      <div className={styles.Header}>
+    <div className={styles.Input}>
+      <div className="Header">
         <h1>Affordanz</h1>
-        <p className={styles.spot}>Unibibliothek: Handschriften</p>
+        <p className="spot">Unibibliothek: Handschriften</p>
       </div>
-      <div className={styles.ImageCarousel}>
+      <div className="ImageCarousel">
         <ImageCarousel img1={img1} img2={img2} img3={img3} />
       </div>
-      <div className={styles.InputAudio}>
+      <div className="InputAudio">
         <Audio></Audio>
       </div>
-      <div className={styles.TextCarousel1}>
+      <div className="TextCarousel1">
         <TextCarousel
           title="Praktiken"
           paragraph1="Hier sehen wir das wohl prestigeträchtigste Artefakt der
@@ -61,7 +61,7 @@ function Input() {
           paragraph7="über den bloßen immanenten Nutzungscharakter – dem Lesen – hinaus."
         />
       </div>
-      <div className={styles.TextCarousel2}>
+      <div className="TextCarousel2">
         <TextCarousel
           title="Theoretischer Zusammenhang"
           paragraph1="Damit sind wir bei einem weiteren vom Sonderforschungsbereich

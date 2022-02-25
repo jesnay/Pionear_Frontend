@@ -4,9 +4,10 @@ import styles from "./Buttons.module.css";
 class Buttons extends Component {
   state = {};
   render() {
-    return <div></div>;
+    return <div className={styles.Buttons}>
+      <button>Hey:)</button>
+    </div>;
   }
 }
 
 export default Buttons;
-

@@ -7,7 +7,7 @@ import ImgStation from "../../assets/images/Stations/4_Affordanz/Rechteck 609.pn
 import ImgWalk from "../../assets/images/Icons/walking.png";
 import locationImg from "../../assets/images/Icons/location-active.png";
 import timePlaceholder from "../../assets/images/Icons/time.png";
-import CloseButton from "../../assets/buttons/closing-Button.png";
+import Buttons from "../../components/Buttons/Buttons.jsx";
 
 function Blurb() {
   let stationID = 4;
@@ -23,7 +23,11 @@ function Blurb() {
   return (
     <div className={styles.Blurb}>
       <div className="card">
-        <img className="closeButton" src={CloseButton} alt="close" />
+       {/* Hier gebauten Button einbauen */}
+       <div className="Close">
+        <Buttons type= "close"/>
+      </div>
+        {/* <img className="closeButton" src={CloseButton} alt="close" />  */}
         <h1>{!station ? "Loading..." : station.topic}</h1>
         <img src={timePlaceholder} className="timePlaceholder" alt="..." />
         <p className="spot">{!station ? "Loading..." : station.spot}</p>

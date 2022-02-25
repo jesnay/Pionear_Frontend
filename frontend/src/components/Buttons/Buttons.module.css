@@ -27,6 +27,29 @@
   border-radius: 40px;
   border: none;
 }
+.Buttons :global .InactiveButton {
+  height: 50px;
+  width: fit-content;
+  padding-left: 30px;
+  padding-right: 30px;
+  background-color:rgba(255, 255, 255, 1);
+  box-shadow: inset 0px 8px 10px rgba(53, 66, 89, 0.25);
+  color: rgba(53, 66, 89, 0.5);
+  font-size: 24px;
+  font-family: "Outfit-Light";
+  border-radius: 40px;
+  border: none;
+}
+.Buttons :global .XButton {
+  height: 26px;
+  width: 26px;
+  padding-bottom: 27px;
+  background-color: rgba(255, 255, 255, 1);
+  box-shadow: 0px 8px 10px rgba(53, 66, 89, 0.25);
+  border-radius: 40px;
+  border: none; 
+}
+
 
 /* <---------------Buttons--------------->
 //Größe

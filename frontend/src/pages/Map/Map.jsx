@@ -6,7 +6,7 @@ import Blurb from "../../components/Blurb/Blurb.jsx";
 import MapImage from "../../assets/images/Map.png";
 import locationInactive from "../../assets/images/Icons/location-inactive.png";
 import locationActive from "../../assets/images/Icons/location-active.png";
-import CategoryButton from "../../assets/buttons/Category-Button.png";
+import CategoryButton from "../../assets/buttons/CategoryButton.png";
 
 function Map() {
   return (

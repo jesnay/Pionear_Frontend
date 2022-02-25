@@ -6,6 +6,11 @@
   margin-bottom: 0px;
 }
 
+.Input :global .ExitStation {
+  justify-content: center;
+  align-items: center;
+}
+
 .Input :global .spot {
   padding-left: 30px;
   font-size: 14px;

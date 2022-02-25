@@ -5,7 +5,7 @@ class Buttons extends Component {
   state = {};
   render() {
     return <div className={styles.Buttons}>
-      <button>Hey:)</button>
+      <button className= "BasicButton">Station beenden</button>
     </div>;
   }
 }

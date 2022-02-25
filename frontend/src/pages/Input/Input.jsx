@@ -6,6 +6,7 @@ import img2 from "../../assets/images/Stations/4_Affordanz/input_image_2.png";
 import img3 from "../../assets/images/Stations/4_Affordanz/input_image_3.png";
 import TextCarousel from "../../components/InputTextCarousel/TextCarousel.jsx";
 import Audio from "../../components/InputAudio/Audio.jsx";
+import Button from "../../components/Buttons/Buttons.jsx";
 
 function Input() {
   return (
@@ -91,6 +92,7 @@ function Input() {
           Begriffes der Affordanz zu nutzen."
         />
       </div>
+      <Button className="ExitStation"></Button>
     </div>
   );
 }

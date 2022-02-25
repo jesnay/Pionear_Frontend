@@ -7,8 +7,10 @@
 }
 
 .Input :global .ExitStation {
-  justify-content: center;
-  align-items: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-left: 50px;
+  margin-right: auto;
 }
 
 .Input :global .spot {

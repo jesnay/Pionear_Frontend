@@ -3,16 +3,15 @@
   display: block;
   margin-left: auto;
   margin-right: auto;
-  /* margin-top: 515px; */
-  margin-bottom: 30px;
+  margin-bottom: 20px;
   background-color: white;
   width: 90%;
-  height: 300px;
+  height: 290px;
   border-radius: 15px;
   box-shadow: 0px 0px 10px 5px #bfbfbf;
 }
 
-.PreviewButton {
+/* .PreviewCard :global .PreviewButton {
   border-style: none;
   border-radius: 15px;
   text-align: left;
@@ -22,9 +21,9 @@
   padding-right: 0px;
   padding-top: 0px;
   padding-bottom: 0px;
-}
+} */
 
-.PreviewImg {
+.PreviewCard :global .PreviewImg {
   position: relative;
   border-radius: 15px;
   width: 100% !important;
@@ -34,34 +33,33 @@
   margin-bottom: -30px;
 }
 
-.Text {
+.PreviewCard :global .Text {
+  padding-top: 40px;
   position: relative;
   padding-left: 15px;
   padding-right: 15px;
   display: block;
 }
 
-.Text :global h1 {
-  padding-top: 40px !important;
+.PreviewCard :global h1 {
   font-family: "Outfit-SemiBold";
   font-size: 32px;
-  margin-bottom: 0;
-}
-
-.Text :global .Question {
-  font-family: "Outfit-Light";
-  line-height: 25px;
-  font-size: 18px;
   margin-bottom: 0px;
 }
 
-.alignIconAndAdress {
+.PreviewCard :global .Question {
+  font-family: "Outfit-Light";
+  line-height: 25px;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.PreviewCard :global .alignIconAndAdress {
   display: flex;
-  padding-top: 10px;
   padding-bottom: 5px;
 }
 
-.adress {
+.PreviewCard :global .stationAdress {
   color: rgba(38, 121, 120, 1);
   font-size: 15px;
   margin-bottom: 0px;
@@ -69,7 +67,7 @@
   font-family: "Outfit-Regular";
 }
 
-.alignIconAndAdress :global .locationImg {
+.PreviewCard :global .locationImg {
   width: 30px;
   height: auto;
 }

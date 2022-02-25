@@ -2,17 +2,19 @@
 
 .Map {
   position: relative;
-  position: fixed;
+  margin: 0;
+  height: 100%;
+  overflow: hidden;
 }
 
-.MapImage {
+.Map :global .MapImage {
   position: absolute;
   width: 100%;
   height: auto;
   position: fixed;
 }
 
-.CategoryButton {
+.Map :global .CategoryButton {
   width: 50px;
   height: auto;
   position: relative;
@@ -23,7 +25,7 @@
   /* border-radius: 0px; */
 }
 
-.circleContainer {
+.Map :global .circleContainer {
   margin: 0;
   height: 100vh;
   display: flex;
@@ -31,7 +33,7 @@
   justify-content: center;
 }
 
-.circle {
+.circleContainer :global .circle {
   animation: pulse 2s infinite;
   background-color: red;
   border-radius: 50%;
@@ -55,21 +57,21 @@
   }
 }
 
-.Blurb {
+.Map :global .Blurb {
   position: relative;
-  margin-top: -1040px;
+  margin-top: -915px;
 }
 
-.PreviewCard {
+.Map :global .PreviewCard {
   position: relative;
-  margin-top: -370px;
+  margin-top: -380px;
 }
 
-.location-container {
+.Map :global .location-container {
   position: relative;
 }
 
-.active {
+.Map :global .active {
   position: relative;
   width: 40px;
   height: 50px;
@@ -77,14 +79,14 @@
   top: 370px;
 }
 
-.inactive1 {
+.Map :global .inactive1 {
   position: relative;
   width: 40px;
   height: 50px;
   left: 250px;
   top: 400px;
 }
-.inactive2 {
+.Map :global .inactive2 {
   position: relative;
   width: 40px;
   height: 50px;

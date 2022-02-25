@@ -11,31 +11,31 @@ import CategoryButton from "../../assets/buttons/Category-Button.png";
 function Map() {
   return (
     <div className={styles.Map}>
-      <img className={styles.MapImage} src={MapImage} alt="MapImage" />
+      <img className="MapImage" src={MapImage} alt="MapImage" />
 
       <img
-        className={styles.CategoryButton}
+        className="CategoryButton"
         src={CategoryButton}
         alt="CategoryButton"
       />
 
-      <div className={styles.locationContainer}>
-        <img className={styles.inactive1} src={locationInactive} alt="" />
-        <img className={styles.inactive2} src={locationInactive} alt="" />
-        <img className={styles.active} src={locationActive} alt="" />
+      <div className="locationContainer">
+        <img className="inactive1" src={locationInactive} alt="" />
+        <img className="inactive2" src={locationInactive} alt="" />
+        <img className="active" src={locationActive} alt="" />
       </div>
 
-      <div className={styles.circleContainer}>
-        <div className={styles.circle}></div>
+      <div className="circleContainer">
+        <div className="circle"></div>
       </div>
 
-      {/* <div className={styles.Blurb}>
+      <div className="Blurb">
         <Blurb />
-      </div> */}
-
-      <div className={styles.PreviewCard}>
-        <PreviewCard />
       </div>
+
+      {/* <div className="PreviewCard">
+        <PreviewCard />
+      </div> */}
     </div>
   );
 }

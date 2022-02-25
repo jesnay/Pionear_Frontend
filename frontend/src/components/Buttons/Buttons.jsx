@@ -1,12 +1,20 @@
-import React, { Component } from "react";
+import React from "react";
 import styles from "./Buttons.module.css";
 
-class Buttons extends Component {
-  state = {};
-  render() {
-    return <div className={styles.Buttons}>
-      <button className= "BasicButton">Station beenden</button>
-    </div>;
+function Buttons({ type, text }) {
+  if (type === "basic") {
+    return (
+      <div className={styles.Buttons}>
+        <button className="BasicButton">{text}</button>
+      </div>
+    );
+  }
+  else if (type=== "cyan") {
+    return (
+      <div className={styles.Buttons}>
+        <button className="CyanButton">{text}</button>
+      </div>
+    );
   }
 }
 

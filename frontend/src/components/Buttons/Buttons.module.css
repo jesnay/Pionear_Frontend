@@ -4,12 +4,26 @@
 
 .Buttons :global .BasicButton {
   height: 50px;
-  width: fit-content; 
+  width: fit-content;
   padding-left: 30px;
   padding-right: 30px;
   background-color: rgba(53, 66, 89, 1);
   color: rgba(255, 255, 255, 1);
   font-size: 24px;
+  font-family: "Outfit-Light";
+  border-radius: 40px;
+  border: none;
+}
+
+.Buttons :global .CyanButton {
+  height: 50px;
+  width: fit-content;
+  padding-left: 30px;
+  padding-right: 30px;
+  background-color: rgba(46, 94, 105, 1);
+  color: rgba(255, 255, 255, 1);
+  font-size: 24px;
+  font-family: "Outfit-Light";
   border-radius: 40px;
   border: none;
 }

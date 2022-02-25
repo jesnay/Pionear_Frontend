@@ -93,7 +93,7 @@ function Input() {
         />
       </div>
       <div className="ExitStation">
-        <Buttons/>
+        <Buttons type= "cyan" text= "Station beenden"/>
       </div>
     </div>
   );

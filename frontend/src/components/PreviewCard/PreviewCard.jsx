@@ -16,7 +16,7 @@ function PreviewCard() {
         <h1>{!station ? "Loading..." : station.topic}</h1>
         <p className="Question">Wie können Schriften eine Affordanz bieten?</p>
         <div className="alignIconAndAdress">
-          <img src={locationImg} className="locationImg" alt="..." />
+          <img className="locationImg" src={locationImg} alt="..." />
           <p className="stationAdress">
             {!station ? "Loading..." : station.adress}
           </p>

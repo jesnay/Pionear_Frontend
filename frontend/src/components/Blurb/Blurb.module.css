@@ -12,6 +12,8 @@
 .Blurb :global .card {
   position: relative;
   margin: 0 auto;
+  margin-bottom: 20px;
+  margin-top: 20px;
   width: 90%;
   height: auto;
   background-color: white;

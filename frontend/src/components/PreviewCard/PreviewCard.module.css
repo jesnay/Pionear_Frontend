@@ -41,8 +41,7 @@
   display: block;
 }
 
-.Text :global h1 {
-  padding-top: 40px !important;
+.PreviewCard :global h1 {
   font-family: "Outfit-SemiBold";
   font-size: 32px;
   margin-bottom: 0px;

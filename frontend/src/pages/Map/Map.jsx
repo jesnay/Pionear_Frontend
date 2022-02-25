@@ -29,13 +29,13 @@ function Map() {
         <div className="circle"></div>
       </div>
 
-      {/* <div className="Blurb">
+      <div className="Blurb">
         <Blurb />
-      </div> */}
-
-      <div className="PreviewCard">
-        <PreviewCard />
       </div>
+
+      {/* <div className="PreviewCard">
+        <PreviewCard />
+      </div> */}
     </div>
   );
 }

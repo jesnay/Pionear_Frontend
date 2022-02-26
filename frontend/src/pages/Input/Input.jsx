@@ -92,8 +92,11 @@ function Input() {
           Begriffes der Affordanz zu nutzen."
         />
       </div>
-      <div className="ExitStation">
-        <Buttons/>
+      {/* <div className="ExitStation">
+        <Buttons type= "cyan" text= "Station beenden"/>
+      </div> */}
+      <div className="GoOnWithoutUserInput">
+        <Buttons type= "inactive" text= "ohne Foto"/>
       </div>
     </div>
   );

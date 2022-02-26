@@ -9,7 +9,7 @@ function App() {
   return (
     <Router>
       <Routes>
-        <Route path="/" exact element={<Input />}></Route>
+        <Route path="/" exact element={<Map />}></Route>
         <Route path="/map" exact element={<Map />}></Route>
         <Route path="/blurb" exact element={<Blurb />}></Route>
       </Routes>

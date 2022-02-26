@@ -40,6 +40,7 @@ example-text-input-color: rgba(53, 66, 89, 0.25); kein css Befehl
 <---------------Text--------------->
 //heller Hintergrund
 color: rgba(0, 0, 0, 1); //heller Hintergrund -> schwarz
+color: rgba(147, 188, 188, 1); //heller Hintergrund -> hellblau
 
 //dunkler Hintergrund
 color: rgba(255, 255, 255, 1); //dunkler Hintergrund -> weiss

@@ -11,6 +11,11 @@
   margin-bottom: 20px;
   text-align: center;
 }
+.Input :global .GoOnWithoutUserInput {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  text-align: center;
+}
 
 .Input :global .spot {
   padding-left: 30px;

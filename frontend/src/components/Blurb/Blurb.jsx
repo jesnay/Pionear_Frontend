@@ -2,7 +2,7 @@ import React from "react";
 import { GetStation, SetAnswer } from "../../ConnectionToDatabase.js";
 import styles from "./Blurb.module.css";
 import { Link } from "react-router-dom";
-import MapImg from "../../assets/images/Map.png";
+// import MapImg from "../../assets/images/Map.png";
 import ImgStation from "../../assets/images/Stations/4_Affordanz/Rechteck 609.png";
 import ImgWalk from "../../assets/images/Icons/walking.png";
 import locationImg from "../../assets/images/Icons/location-active.png";

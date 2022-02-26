@@ -1,3 +1,7 @@
+.UserAnswers {
+  position: relative;
+}
+
 .UserAnswers :global .questWave {
   border-radius: 0;
   position: absolute;
@@ -36,4 +40,9 @@
 
 .UserAnswers :global .QuestAnswerList_Image__IqL02 {
   margin-bottom: 24px;
+}
+
+.UserAnswers :global .QuestAnswerCard {
+  position: absolute;
+  margin-top: -750px;
 }

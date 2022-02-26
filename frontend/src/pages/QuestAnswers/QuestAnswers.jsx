@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 import styles from "./QuestAnswers.module.css";
+import QuestAnswerCard from "../../components/QuestAnswerCard/QuestAnswerCard.jsx";
+
 import QuestAnswerList from "../../components/QuestAnwerList/QuestAnswerList.jsx";
 import Wave from "../../assets/images/Waves/QuestWave_V2.png";
 import user0 from "../../assets/images/QuestAnswers/user0.jpg";
@@ -90,6 +92,10 @@ function QuestAnswers() {
         <Link to="/map">
           <button>end station</button>
         </Link>
+      </div>
+
+      <div className="QuestAnswerCard">
+        <QuestAnswerCard />
       </div>
     </div>
   );

@@ -10,13 +10,9 @@ function QuestTextBox(props) {
     setInput("");
   };
   return (
-    <div>
+    <div className={styles.TextBox}>
       <div>
-        <Form
-          className={styles.formInput}
-          autoComplete="off"
-          onSubmit={handleSubmit}
-        >
+        <Form className="formInput" autoComplete="off" onSubmit={handleSubmit}>
           <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
             <Form.Control
               placeholder=""
@@ -25,7 +21,7 @@ function QuestTextBox(props) {
             />
           </Form.Group>
           <button
-            className={styles.button}
+            className="button"
             onClick={() => {
               props.func(input);
             }}

@@ -1,13 +1,11 @@
-.formInput :global .form-control {
+.TextBox :global .form-control {
   width: 330px !important;
   height: 32px !important;
-  margin-left: 30px;
-  margin-top: 10px;
   border-radius: 16px !important;
   border: 0px !important;
   box-shadow: inset 0px 3px 10px rgba(53, 66, 89, 0.25);
 }
 
-.button {
+.TextBox :global .button {
   display: none;
 }

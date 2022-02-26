@@ -1,6 +1,6 @@
 import React from "react";
 
-function QuestAnswer() {
+function QuestAnswerCard() {
   return (
     <div>
       <p>Hier wird die Card gebaut für die QuestAnswer. </p>
@@ -13,4 +13,4 @@ function QuestAnswer() {
   );
 }
 
-export default QuestAnswer;
+export default QuestAnswerCard;

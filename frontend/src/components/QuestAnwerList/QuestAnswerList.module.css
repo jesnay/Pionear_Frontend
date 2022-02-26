@@ -1,0 +1,14 @@
+.Image :global img {
+  width: 153px;
+  height: 153px;
+  border-radius: 10px;
+}
+
+.Image :global button {
+  width: 153px;
+  height: 153px;
+  border: none;
+  padding: 0;
+  box-shadow: 3px 3px 10px rgba(53, 66, 89, 0.25);
+  background-color: rgba(0, 0, 0, 0);
+}

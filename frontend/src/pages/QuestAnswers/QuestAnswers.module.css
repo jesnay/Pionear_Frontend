@@ -1,0 +1,31 @@
+.UserAnswers :global h1 {
+  font-family: "Outfit-SemiBold";
+  font-size: 32px;
+  padding-left: 30px;
+  margin-top: 40px;
+  margin-bottom: 0px;
+}
+
+.UserAnswers :global .Caption {
+  font-family: "Outfit-Thin";
+  padding-left: 30px;
+  font-size: 20px;
+  max-width: 330px;
+  margin-top: 15px;
+}
+
+.UserAnswers :global .ListElements {
+  margin-top: 115px;
+}
+.UserAnswers :global .Left {
+  float: left;
+  margin-left: 30px;
+}
+.UserAnswers :global .Right {
+  float: right;
+  margin-right: 30px;
+}
+
+.UserAnswers :global .QuestAnswerList_Image__IqL02 {
+  margin-bottom: 24px;
+}

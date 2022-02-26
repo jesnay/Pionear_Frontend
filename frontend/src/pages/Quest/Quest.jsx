@@ -5,6 +5,7 @@ import QuestTextBoxInput from "../../components/QuestTextBoxInput/QuestTextBoxIn
 import Wave from "../../assets/images/Waves/QuestWave_V2.png";
 import QuestPhotoPreview from "../../components/QuestPhotoPreview/QuestPhotoPreview.jsx";
 import userImage from "../../assets/images/Stations/4_Affordanz/quest_userImage.jpg";
+import { Link } from "react-router-dom";
 
 function QuestTakeImage() {
   return (
@@ -22,7 +23,9 @@ function QuestTakeImage() {
         </p>
       </div>
       <div className="PhotoButton">
-        <button>take pic</button>
+        <Link to="/questb">
+          <button>take pic</button>
+        </Link>
       </div>
     </div>
   );
@@ -44,6 +47,11 @@ function QuestPreviewImage() {
       </div>
       <div className="PhotoPreview">
         <QuestPhotoPreview image={userImage} />
+      </div>
+      <div>
+        <Link to="/questc">
+          <button>weiter</button>
+        </Link>
       </div>
     </div>
   );
@@ -97,6 +105,11 @@ function QuestUserInput() {
             1
           </button>
         ))}
+      </div>
+      <div>
+        <Link to="/input">
+          <button>end quest</button>
+        </Link>
       </div>
     </div>
   );

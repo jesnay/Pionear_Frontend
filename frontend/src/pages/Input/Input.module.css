@@ -39,3 +39,7 @@
 .Input :global .TextCarousel2 {
   margin-top: 40px;
 }
+.Input :global .AnswerPreview {
+  margin-left: 30px;
+  margin-top: 40px;
+}

@@ -7,6 +7,8 @@ import img3 from "../../assets/images/Stations/4_Affordanz/input_image_3.png";
 import TextCarousel from "../../components/InputTextCarousel/TextCarousel.jsx";
 import Audio from "../../components/InputAudio/Audio.jsx";
 import Buttons from "../../components/Buttons/Buttons.jsx";
+import QuestAnswerPreview from "../../components/QuestAnswerPreview/QuestAnswerPreview.jsx";
+import { Link } from "react-router-dom";
 
 function Input() {
   return (
@@ -92,11 +94,16 @@ function Input() {
           Begriffes der Affordanz zu nutzen."
         />
       </div>
+      <div className="AnswerPreview">
+        <Link to="/answers">
+          <QuestAnswerPreview />
+        </Link>
+      </div>
       {/* <div className="ExitStation">
         <Buttons type= "cyan" text= "Station beenden"/>
       </div> */}
       <div className="GoOnWithoutUserInput">
-        <Buttons type= "inactive" text= "ohne Foto"/>
+        <Buttons type="inactive" text="ohne Foto" />
       </div>
     </div>
   );

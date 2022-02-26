@@ -10,6 +10,7 @@ import user4 from "../../assets/images/QuestAnswers/user4.jpg";
 import user5 from "../../assets/images/QuestAnswers/user5.jpg";
 import user6 from "../../assets/images/QuestAnswers/user6.jpg";
 import user7 from "../../assets/images/QuestAnswers/user7.jpg";
+import { Link } from "react-router-dom";
 
 function QuestAnswers() {
   let [user, setUser] = React.useState([
@@ -84,6 +85,11 @@ function QuestAnswers() {
           <QuestAnswerList func={openImage} user={user[5]} />
           <QuestAnswerList func={openImage} user={user[7]} />
         </div>
+      </div>
+      <div>
+        <Link to="/map">
+          <button>end station</button>
+        </Link>
       </div>
     </div>
   );

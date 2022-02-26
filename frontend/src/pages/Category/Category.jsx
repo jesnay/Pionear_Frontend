@@ -7,6 +7,7 @@ function Category() {
     <div>
       <p>Hier die Category Componenten einfügen</p>
       <Link to="/map">
+      <div className="card"></div>
         <button>Weiter</button>
       </Link>
     </div>

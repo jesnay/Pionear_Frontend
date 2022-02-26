@@ -27,6 +27,9 @@ function Blurb() {
         <div className="Close">
           <Buttons type="close" />
         </div>
+        {/* <div className="CategoryButton">
+          <Buttons type="category" />
+        </div> */}
         {/* <img className="closeButton" src={CloseButton} alt="close" />  */}
         <h1>{!station ? "Loading..." : station.topic}</h1>
         <img src={timePlaceholder} className="timePlaceholder" alt="..." />

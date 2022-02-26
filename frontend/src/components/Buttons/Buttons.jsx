@@ -1,6 +1,7 @@
 import React from "react";
 import styles from "./Buttons.module.css";
 import x from "../../assets/buttons/x.png";
+import llll from "../../assets/buttons/llll.png";
 
 function Buttons({ type, text }) {
   if (type === "basic") {
@@ -34,7 +35,8 @@ function Buttons({ type, text }) {
   else if (type === "category") {
     return (
       <div className={styles.Buttons}>
-        <button className="CategoryButton"> {text} </button>
+        <button className="CategoryButton"> {" "}
+          <img src={llll}></img>{" "} </button>
       </div>
     );
   }

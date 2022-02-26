@@ -1,0 +1,6 @@
+.PhotoPreview :global img {
+  width: 330px;
+  height: 426px;
+  border-radius: 15px;
+  box-shadow: inset 0px 3px 5px rgba(53, 66, 89, 0.25);
+}

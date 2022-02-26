@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import styles from "./QuestAnswers.module.css";
 import QuestAnswerList from "../../components/QuestAnwerList/QuestAnswerList.jsx";
+import Wave from "../../assets/images/Waves/QuestWave_V2.png";
 import user0 from "../../assets/images/QuestAnswers/user0.jpg";
 import user1 from "../../assets/images/QuestAnswers/user1.jpg";
 import user2 from "../../assets/images/QuestAnswers/user2.jpg";
@@ -60,12 +61,16 @@ function QuestAnswers() {
   };
   return (
     <div className={styles.UserAnswers}>
-      <div className="Header">
+      <div>
+        <img className="questWave" src={Wave} alt="backgroundWave" />
+      </div>
+      <div>
         <h1>Affordanz</h1>
         <p className="Caption">
           Das sagen andere Nutzer zu schrifttragenden Objekten
         </p>
       </div>
+
       <div className="ListElements">
         <div className="Left">
           <QuestAnswerList func={openImage} user={user[0]} />

@@ -1,9 +1,16 @@
+.UserAnswers :global .questWave {
+  border-radius: 0;
+  position: absolute;
+  width: 100%;
+  z-index: -1;
+}
 .UserAnswers :global h1 {
   font-family: "Outfit-SemiBold";
   font-size: 32px;
   padding-left: 30px;
-  margin-top: 40px;
+  padding-top: 40px;
   margin-bottom: 0px;
+  color: rgba(255, 255, 255, 1);
 }
 
 .UserAnswers :global .Caption {
@@ -12,6 +19,7 @@
   font-size: 20px;
   max-width: 330px;
   margin-top: 15px;
+  color: rgba(255, 255, 255, 1);
 }
 
 .UserAnswers :global .ListElements {

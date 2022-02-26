@@ -1,8 +1,46 @@
-.TextInput :global .UserTyping {
-  margin-top: 300px;
+.Quest :global .UserTyping {
+  margin-top: 100px;
   margin-left: 30px;
 }
-.TextInput :global .UserInput {
+.Quest :global .UserInput {
   margin-top: 30px;
   margin-left: 30px;
+}
+
+.Quest :global .questWave {
+  border-radius: 0;
+  position: absolute;
+  width: 100%;
+  z-index: -1;
+}
+.Quest :global .h1 {
+  color: rgba(255, 255, 255, 1);
+  padding-left: 30px;
+  padding-top: 40px;
+  font-family: "Outfit-SemiBold";
+  font-size: 32px;
+}
+.Quest :global .questTask1 {
+  color: rgba(255, 255, 255, 1);
+  padding-left: 30px;
+  max-width: 360px;
+  font-family: "Outfit-Thin";
+  font-size: 20px;
+  margin-bottom: 0px;
+  line-height: 25px;
+}
+
+.Quest :global .questTask2 {
+  color: rgba(255, 255, 255, 1);
+  padding-left: 30px;
+  max-width: 360px;
+  font-family: "Outfit-Thin";
+  font-size: 20px;
+  margin-top: 10px;
+  line-height: 25px;
+}
+
+.Quest :global .PhotoPreview {
+  text-align: center;
+  margin-top: 75px;
 }

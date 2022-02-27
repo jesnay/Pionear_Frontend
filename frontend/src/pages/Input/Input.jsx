@@ -92,6 +92,8 @@ function Input() {
           Geschichte zu vermitteln. An dieser Stelle"
           paragraph5="bot es sich übrigens an, den Codex Manesse zur Erklärung des
           Begriffes der Affordanz zu nutzen."
+          paragraph6=""
+          paragraph7=""
         />
       </div>
       <div className="AnswerPreview">

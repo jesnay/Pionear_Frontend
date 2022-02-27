@@ -76,34 +76,37 @@ function QuestAnswers() {
 
   return (
     <div className={styles.UserAnswers}>
-      <div>
-        <img className="questWave" src={Wave} alt="backgroundWave" />
-      </div>
-      <div>
-        <h1>Affordanz</h1>
-        <p className="Caption">
-          Das sagen andere Nutzer zu schrifttragenden Objekten
-        </p>
-      </div>
-      <div className="ListElements">
-        <div className="Left">
-          <QuestAnswerList func={openImage} user={user[0]} />
-          <QuestAnswerList func={openImage} user={user[2]} />
-          <QuestAnswerList func={openImage} user={user[4]} />
-          <QuestAnswerList func={openImage} user={user[6]} />
+      <div className={state ? "BlurEffect" : ""}>
+        <div>
+          <img className="questWave" src={Wave} alt="backgroundWave" />
         </div>
-        <div className="Right">
-          <QuestAnswerList func={openImage} user={user[1]} />
-          <QuestAnswerList func={openImage} user={user[3]} />
-          <QuestAnswerList func={openImage} user={user[5]} />
-          <QuestAnswerList func={openImage} user={user[7]} />
+        <div>
+          <h1>Affordanz</h1>
+          <p className="Caption">
+            Das sagen andere Nutzer zu schrifttragenden Objekten
+          </p>
+        </div>
+        <div className="ListElements">
+          <div className="Left">
+            <QuestAnswerList func={openImage} user={user[0]} />
+            <QuestAnswerList func={openImage} user={user[2]} />
+            <QuestAnswerList func={openImage} user={user[4]} />
+            <QuestAnswerList func={openImage} user={user[6]} />
+          </div>
+          <div className="Right">
+            <QuestAnswerList func={openImage} user={user[1]} />
+            <QuestAnswerList func={openImage} user={user[3]} />
+            <QuestAnswerList func={openImage} user={user[5]} />
+            <QuestAnswerList func={openImage} user={user[7]} />
+          </div>
+        </div>
+        <div>
+          <Link to="/map">
+            <button>end station</button>
+          </Link>
         </div>
       </div>
-      <div>
-        <Link to="/map">
-          <button>end station</button>
-        </Link>
-      </div>
+
       <div className="QuestAnswerCard">
         {console.log(userCard)}
         {state ? <QuestAnswerCard user={userCard} /> : null}

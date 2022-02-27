@@ -8,6 +8,11 @@
   width: 100%;
   z-index: -1;
 }
+.UserAnswers :global .BlurEffect {
+  filter: brightness(60%);
+  background-color: rgb(199, 199, 199);
+}
+
 .UserAnswers :global h1 {
   font-family: "Outfit-SemiBold";
   font-size: 32px;
@@ -45,4 +50,7 @@
 .UserAnswers :global .QuestAnswerCard {
   position: absolute;
   margin-top: -750px;
+  margin-left: 20px;
 }
+
+/*filter: blur(4px);*/

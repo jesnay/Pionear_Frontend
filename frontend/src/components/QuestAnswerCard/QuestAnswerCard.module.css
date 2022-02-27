@@ -20,11 +20,11 @@
   margin: 0 auto;
   margin-bottom: 20px;
   margin-top: 20px;
-  width: 90%;
+  width: 350px;
   height: auto;
   background-color: white;
   border-radius: 15px;
-  box-shadow: 0px 0px 10px 5px slategrey;
+  box-shadow: 0px 0px 10px rgba(53, 66, 89, 0.25);
   border: none;
 }
 .AnswerCard :global .UserImage {

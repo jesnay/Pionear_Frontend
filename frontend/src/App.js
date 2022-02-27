@@ -11,6 +11,7 @@ import {
 } from "./pages/Quest/Quest.jsx";
 import QuestAnswers from "./pages/QuestAnswers/QuestAnswers.jsx";
 import Categroy from "./pages/Category/Category.jsx";
+import QuestFinished from "./components/QuestFinished/QuestFinished.jsx";
 
 function App() {
   return (

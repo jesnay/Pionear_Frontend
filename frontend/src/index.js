@@ -1,12 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import "./index.css";
-// import {
-//   QuestNoImage,
-//   QuestImage,
-//   QuestTextField,
-// } from "./pages/StationQuest/StationQuest.jsx";
-import Map from "./pages/Map/Map.jsx";
+
 import reportWebVitals from "./reportWebVitals";
 import "bootstrap/dist/css/bootstrap.css";
 //import Map from "./pages/Map/Map.jsx";

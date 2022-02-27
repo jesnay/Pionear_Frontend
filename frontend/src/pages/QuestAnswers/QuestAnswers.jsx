@@ -107,6 +107,15 @@ function QuestAnswers() {
       <div className="QuestAnswerCard">
         {console.log(userCard)}
         {state ? <QuestAnswerCard user={userCard} /> : null}
+        {state ? (
+          <button
+            onClick={() => {
+              setState(false);
+            }}
+          >
+            close
+          </button>
+        ) : null}
       </div>
     </div>
   );

@@ -44,9 +44,11 @@ function Blurb() {
             {!station ? "Loading..." : station.description}
           </p>
         </div>
-        <Link to="/questa">
-          <button className="button">Station beginnen</button>
-        </Link>
+        <div className="ButtonDecoration">
+          <Link to="/questa" style={{ textDecoration: "none" }}>
+            <button className="button">Station beginnen</button>
+          </Link>
+        </div>
 
         <div className="alignIconAndAdress">
           <img src={locationImg} className="locationImg" alt="..." />

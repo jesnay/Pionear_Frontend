@@ -110,6 +110,7 @@
   display: block;
   margin-left: auto;
   margin-right: auto;
+  text-decoration: none;
 }
 
 .Blurb :global .alignIconAndAdress {
@@ -125,3 +126,4 @@
   margin-bottom: 0px;
   font-size: 23px;
 }
+

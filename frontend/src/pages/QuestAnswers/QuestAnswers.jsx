@@ -15,11 +15,11 @@ import user7 from "../../assets/images/QuestAnswers/user7.jpg";
 import { Link } from "react-router-dom";
 
 function QuestAnswers() {
-  let [user, setUser] = React.useState([
+  const [user, setUser] = React.useState([
     {
       id: 0,
       image: user0,
-      answers: ["a", "0"],
+      answers: ["Erweckend", "Begleitend", "Aufmerksamkeit erzeugen"],
     },
     {
       id: 1,
@@ -57,11 +57,23 @@ function QuestAnswers() {
       answers: ["7", "b"],
     },
   ]);
-
+  const [state, setState] = React.useState(false);
+  const [userCard, setCard] = React.useState({
+    id: 0,
+    image: "",
+    answers: [],
+  });
   const openImage = (id) => {
-    console.log(id);
-    console.log(user[id].answers);
+    //console.log(id);
+    //console.log(user[id].answers);
+    setState(true);
+    setCard({
+      id: user[id].id,
+      image: user[id].image,
+      answers: user[id].answers,
+    });
   };
+
   return (
     <div className={styles.UserAnswers}>
       <div>
@@ -73,7 +85,6 @@ function QuestAnswers() {
           Das sagen andere Nutzer zu schrifttragenden Objekten
         </p>
       </div>
-
       <div className="ListElements">
         <div className="Left">
           <QuestAnswerList func={openImage} user={user[0]} />
@@ -93,9 +104,9 @@ function QuestAnswers() {
           <button>end station</button>
         </Link>
       </div>
-
       <div className="QuestAnswerCard">
-        <QuestAnswerCard />
+        {console.log(userCard)}
+        {state ? <QuestAnswerCard user={userCard} /> : null}
       </div>
     </div>
   );

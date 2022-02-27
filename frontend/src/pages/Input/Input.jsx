@@ -103,7 +103,9 @@ function Input() {
         <Buttons type= "cyan" text= "Station beenden"/>
       </div> */}
       <div className="GoOnWithoutUserInput">
-        <Buttons type="inactive" text="ohne Foto" />
+        <Link to="/map">
+          <Buttons type="inactive" text="ohne Foto" />
+        </Link>
       </div>
     </div>
   );

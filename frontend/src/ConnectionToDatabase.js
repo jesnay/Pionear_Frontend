@@ -25,13 +25,11 @@ function GetStation(stationID) {
 }
 
 function SetAnswer(answer) {
-  /*fetch(`/api/answer`, {
+  fetch(`/api/answer`, {
     method: `POST`,
     headers: { "Content-Type": "application/json" },
     body: JSON.stringify(answer),
-  });*/
-  console.log("Hello");
-  console.log(answer.text);
+  });
 }
 
 export { GetStation, SetAnswer };

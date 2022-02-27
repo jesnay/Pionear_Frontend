@@ -6,6 +6,7 @@ import Wave from "../../assets/images/Waves/QuestWave_V2.png";
 import QuestPhotoPreview from "../../components/QuestPhotoPreview/QuestPhotoPreview.jsx";
 import userImage from "../../assets/images/Stations/4_Affordanz/quest_userImage.jpg";
 import { Link } from "react-router-dom";
+import { GetStation, SetAnswer } from "../../ConnectionToDatabase.js";
 
 function QuestTakeImage() {
   return (
@@ -108,7 +109,22 @@ function QuestUserInput() {
       </div>
       <div>
         <Link to="/input">
-          <button>end quest</button>
+          <button
+            onClick={() => {
+              let dbArray = [];
+              for (let i = 0; i < input.length; i++) {
+                dbArray[i] = input[i].childData;
+              }
+              let answer = {
+                userID: Math.floor(Math.random() * 10000) + 1,
+                text: dbArray,
+                stationID: 5,
+              };
+              SetAnswer(answer);
+            }}
+          >
+            end quest
+          </button>
         </Link>
       </div>
     </div>

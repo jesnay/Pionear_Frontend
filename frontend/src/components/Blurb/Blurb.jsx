@@ -45,14 +45,7 @@ function Blurb() {
           </p>
         </div>
         <Link to="/questa">
-          <button
-            onClick={() => {
-              SetAnswer(answer);
-            }}
-            className="button"
-          >
-            Station beginnen
-          </button>
+          <button className="button">Station beginnen</button>
         </Link>
 
         <div className="alignIconAndAdress">

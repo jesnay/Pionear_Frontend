@@ -7,8 +7,8 @@ import user0 from "../../assets/images/QuestAnswers/user0.jpg";
 function QuestAnswerCard(props) {
   return (
     <div className={styles.AnswerCard}>
-      <img className="exitButton" src={exitButton} alt="" />
       <div className="card">
+        {/* <img className="exitButton" src={exitButton} alt="" /> */}
         <img className="UserImage" src={props.user.image} alt="" />
 
         <div className="UserInput">

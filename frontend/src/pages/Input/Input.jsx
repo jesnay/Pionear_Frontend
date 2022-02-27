@@ -97,7 +97,7 @@ function Input() {
         />
       </div>
       <div className="AnswerPreview">
-        <Link to="/answers">
+        <Link to="/answers" style={{ textDecoration: "none" }}>
           <QuestAnswerPreview />
         </Link>
       </div>

@@ -1,10 +1,3 @@
-/* .Map {
-  position: absolute;
-  filter: blur(4px) brightness(50%);
-  width: 100%;
-  height: auto;
-} */
-
 .Blurb {
   position: relative;
 }
@@ -19,7 +12,6 @@
   background-color: white;
   border-radius: 15px;
   display: block;
-  /* box-shadow: 0px 0px 10px 5px #bfbfbf; */
 }
 
 .Blurb :global .closeButton {

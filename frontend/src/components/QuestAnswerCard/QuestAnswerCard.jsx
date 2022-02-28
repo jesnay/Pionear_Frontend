@@ -1,16 +1,12 @@
 import React from "react";
 import styles from "./QuestAnswerCard.module.css";
 
-import exitButton from "../../assets/buttons/x.png";
-import user0 from "../../assets/images/QuestAnswers/user0.jpg";
-
+//*component: Card showing the Answer of an other User
 function QuestAnswerCard(props) {
   return (
     <div className={styles.AnswerCard}>
       <div className="card">
-        {/* <img className="exitButton" src={exitButton} alt="" /> */}
         <img className="UserImage" src={props.user.image} alt="" />
-
         <div className="UserInput">
           {props.user.answers.map((answer) => (
             <p key={answer}>{answer}</p>

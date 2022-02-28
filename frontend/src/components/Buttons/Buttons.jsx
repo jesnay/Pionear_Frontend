@@ -4,6 +4,7 @@ import x from "../../assets/buttons/x.png";
 import llll from "../../assets/buttons/llll.png";
 import image from "../../assets/buttons/icon_takeImage.png";
 
+//*component: Differen Button types
 function Buttons(props) {
   if (props.type === "basic") {
     return (
@@ -40,8 +41,7 @@ function Buttons(props) {
     return (
       <div className={styles.Buttons}>
         <button className="CategoryButton">
-          {" "}
-          <img src={llll}></img>{" "}
+          <img src={llll}></img>
         </button>
       </div>
     );
@@ -49,7 +49,7 @@ function Buttons(props) {
     return (
       <div className={styles.Buttons}>
         <button className="ImageButton">
-          <img src={image}></img>{" "}
+          <img src={image}></img>
         </button>
       </div>
     );

@@ -16,24 +16,10 @@
   border-radius: 15px;
 }
 
-/* .PreviewCard :global .PreviewButton {
-  border-style: none;
-  border-radius: 15px;
-  text-align: left;
-  border-width: 0px;
-  background-color: white;
-  padding-left: 0px;
-  padding-right: 0px;
-  padding-top: 0px;
-  padding-bottom: 0px;
-} */
-
 .PreviewCard :global .PreviewImg {
   position: relative;
   border-radius: 15px;
   width: 100% !important;
-  /* margin: 0px 0px 0px 0px; */
-  /* object-position: 0px 120px; */
   object-fit: contain;
   margin-bottom: -30px;
 }

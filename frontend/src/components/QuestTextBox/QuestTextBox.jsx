@@ -2,9 +2,11 @@ import React from "react";
 import { Form } from "react-bootstrap";
 import styles from "./QuestTextBox.module.css";
 
+//*component: Text Box to type in Terms
 function QuestTextBox(props) {
   let [input, setInput] = React.useState(``);
 
+  //set textBox empty after submitting a Term
   const handleSubmit = (e) => {
     e.preventDefault();
     setInput("");
@@ -20,6 +22,7 @@ function QuestTextBox(props) {
               onChange={(e) => setInput(e.target.value)}
             />
           </Form.Group>
+          {/*Saves and dsplays term aufter submitting*/}
           <button
             className="button"
             onClick={() => {
@@ -35,9 +38,3 @@ function QuestTextBox(props) {
 }
 
 export default QuestTextBox;
-
-/*<div>
-        <p>{input}</p>
-      </div>*/
-
-//onChange={(e) => setInput(e.target.value)}

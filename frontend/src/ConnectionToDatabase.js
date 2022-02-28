@@ -9,17 +9,6 @@ function GetStation(stationID) {
       .then((station) => setStation(station));
   }, []);
 
-  //*mit React.useEffect
-  /*React.useEffect(() => {
-      fetch(`/api/answer`, {
-        method: `POST`,
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(answer),
-      }).then(() => {
-        console.log("Answer added");
-      });
-    }, []);*/
-
   return station;
 }
 

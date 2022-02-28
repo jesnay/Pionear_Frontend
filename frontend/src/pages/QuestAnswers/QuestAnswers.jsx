@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 import styles from "./QuestAnswers.module.css";
 import QuestAnswerCard from "../../components/QuestAnswerCard/QuestAnswerCard.jsx";
 import Buttons from "../../components/Buttons/Buttons.jsx";
@@ -12,10 +13,11 @@ import user4 from "../../assets/images/QuestAnswers/user4.jpg";
 import user5 from "../../assets/images/QuestAnswers/user5.jpg";
 import user6 from "../../assets/images/QuestAnswers/user6.jpg";
 import user7 from "../../assets/images/QuestAnswers/user7.jpg";
-import { Link } from "react-router-dom";
 import x from "../../assets/buttons/x.png";
 
+//*page: Answers from other Users -> Images & Terms
 function QuestAnswers() {
+  //Array of User Data -> would normally come from Database
   const [user, setUser] = React.useState([
     {
       id: 0,
@@ -64,9 +66,9 @@ function QuestAnswers() {
     image: "",
     answers: [],
   });
+
+  //open Picture to see matching Terms
   const openImage = (id) => {
-    //console.log(id);
-    //console.log(user[id].answers);
     setState(true);
     setCard({
       id: user[id].id,
@@ -78,6 +80,7 @@ function QuestAnswers() {
   return (
     <div className={styles.UserAnswers}>
       <div className={state ? "BlurEffect" : "Answers"}>
+        {/* Header*/}
         <div>
           <img className="questWave" src={Wave} alt="backgroundWave" />
         </div>
@@ -87,6 +90,7 @@ function QuestAnswers() {
             Das sagen andere Nutzer zu schrifttragenden Objekten
           </p>
         </div>
+        {/* Shows all Images of other Users -> User can click on one*/}
         <div className="ListElements">
           <div className="Left">
             <QuestAnswerList func={openImage} user={user[0]} />
@@ -101,13 +105,14 @@ function QuestAnswers() {
             <QuestAnswerList func={openImage} user={user[7]} />
           </div>
         </div>
+        {/* End Station and go back to Map*/}
         <div className="EndStationButton">
           <Link to="/map">
             <Buttons type="basic" text="Station beenden" />
           </Link>
         </div>
       </div>
-
+      {/* Show Full Answer Card*/}
       <div className="QuestAnswerCard">
         {state ? (
           <div className="ExitCard">

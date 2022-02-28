@@ -26,3 +26,7 @@ cd frontend/
 npm install
 npm start
 ```
+
+4. Right-Click on "Elemente untersuchen"
+
+5. Set Dimensions to => Width: 390px | Height: 844px (iPhone 12 Pro)

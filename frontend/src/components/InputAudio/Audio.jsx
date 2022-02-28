@@ -1,7 +1,8 @@
-import styles from "./Audio.module.css";
 import React from "react";
+import styles from "./Audio.module.css";
 import input from "../../assets/audio/input.mp3";
 
+//*component: Displays Audio matching the Input Text
 function Audio() {
   return (
     <div>

@@ -4,6 +4,7 @@ import Wave from "../../assets/images/Waves/QuestWave_V2.png";
 import user0 from "../../assets/images/QuestAnswers/user0.jpg";
 import user1 from "../../assets/images/QuestAnswers/user1.jpg";
 
+//*component: Shows Preview of other Answers users have given.
 function QuestAnswerPreview() {
   return (
     <div

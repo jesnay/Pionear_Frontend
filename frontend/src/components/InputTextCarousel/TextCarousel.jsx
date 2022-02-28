@@ -2,6 +2,7 @@ import React from "react";
 import { Carousel } from "react-bootstrap";
 import styles from "./TextCarousel.module.css";
 
+//*component: Display Input Text as Carousel to swipe
 function TextCarousel({
   title,
   paragraph1,
@@ -57,6 +58,5 @@ function TextCarousel({
     </div>
   );
 }
-//{state ? <QuestAnswerCard user={userCard} /> : null}
 
 export default TextCarousel;

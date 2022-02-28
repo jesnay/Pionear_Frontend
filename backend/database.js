@@ -1,3 +1,4 @@
+//*Build Connection to Database
 const sqlite3 = require("sqlite3");
 
 let myDatabase = new sqlite3.Database(

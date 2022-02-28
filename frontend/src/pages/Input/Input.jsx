@@ -1,28 +1,33 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import styles from "./Input.module.css";
 import ImageCarousel from "../../components/InputImageCarousel/ImageCarousel.jsx";
+import Audio from "../../components/InputAudio/Audio.jsx";
+import TextCarousel from "../../components/InputTextCarousel/TextCarousel.jsx";
+import QuestAnswerPreview from "../../components/QuestAnswerPreview/QuestAnswerPreview.jsx";
+import Buttons from "../../components/Buttons/Buttons.jsx";
 import img1 from "../../assets/images/Stations/4_Affordanz/input_image_1.png";
 import img2 from "../../assets/images/Stations/4_Affordanz/input_image_2.png";
 import img3 from "../../assets/images/Stations/4_Affordanz/input_image_3.png";
-import TextCarousel from "../../components/InputTextCarousel/TextCarousel.jsx";
-import Audio from "../../components/InputAudio/Audio.jsx";
-import Buttons from "../../components/Buttons/Buttons.jsx";
-import QuestAnswerPreview from "../../components/QuestAnswerPreview/QuestAnswerPreview.jsx";
-import { Link } from "react-router-dom";
 
+//* Page: Input -> User can see / read / hear Input and Facts about the Station
 function Input() {
   return (
     <div className={styles.Input}>
+      {/*Topic and Location*/}
       <div className="Header">
         <h1>Affordanz</h1>
         <p className="spot">Unibibliothek: Handschriften</p>
       </div>
+      {/*Shows a Collection of Images*/}
       <div className="ImageCarousel">
         <ImageCarousel img1={img1} img2={img2} img3={img3} />
       </div>
+      {/*Audio Tag: Plays the Text Input as Audio*/}
       <div className="InputAudio">
         <Audio></Audio>
       </div>
+      {/*Shows first Text as Carousel -> Swipe to read everything*/}
       <div className="TextCarousel1">
         <TextCarousel
           title="Praktiken"
@@ -64,6 +69,7 @@ function Input() {
           paragraph7="über den bloßen immanenten Nutzungscharakter – dem Lesen – hinaus."
         />
       </div>
+      {/*Shows second Text as Carousel -> Swipe to read everything*/}
       <div className="TextCarousel2">
         <TextCarousel
           title="Theoretischer Zusammenhang"
@@ -96,14 +102,13 @@ function Input() {
           paragraph7=""
         />
       </div>
+      {/*Shows Preview of other User Answers*/}
       <div className="AnswerPreview">
         <Link to="/answers" style={{ textDecoration: "none" }}>
           <QuestAnswerPreview />
         </Link>
       </div>
-      {/* <div className="ExitStation">
-        <Buttons type= "cyan" text= "Station beenden"/>
-      </div> */}
+      {/*Button to End Station completely*/}
       <div className="GoOnWithoutUserInput">
         <Link to="/map">
           <Buttons type="basic" text="Station beenden" />

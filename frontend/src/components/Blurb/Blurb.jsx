@@ -1,32 +1,30 @@
 import React from "react";
-import { GetStation, SetAnswer } from "../../ConnectionToDatabase.js";
-import styles from "./Blurb.module.css";
 import { Link } from "react-router-dom";
-// import MapImg from "../../assets/images/Map.png";
+import styles from "./Blurb.module.css";
+import Buttons from "../../components/Buttons/Buttons.jsx";
+import { GetStation } from "../../ConnectionToDatabase.js";
 import ImgStation from "../../assets/images/Stations/4_Affordanz/Rechteck 609.png";
 import ImgWalk from "../../assets/images/Icons/walking.png";
 import locationImg from "../../assets/images/Icons/location-active.png";
 import timePlaceholder from "../../assets/images/Icons/time.png";
-import Buttons from "../../components/Buttons/Buttons.jsx";
 
+//*component: Shows Information about Station -> Gets Data out of database as an example
 function Blurb(props) {
   let stationID = 4;
-  let categoryID = 1;
   let station = GetStation(stationID);
+
+  //closes Blurb
   const closeBlurb = () => {
     props.func();
   };
+
   return (
     <div className={styles.Blurb}>
       <div className="card">
-        {/* Hier gebauten Button einbauen */}
+        {/*Information about Station */}
         <div className="Close">
           <Buttons type="close" func={closeBlurb} />
         </div>
-        {/* <div className="CategoryButton">
-          <Buttons type="category" />
-        </div> */}
-        {/* <img className="closeButton" src={CloseButton} alt="close" />  */}
         <h1>{!station ? "Loading..." : station.topic}</h1>
         <img src={timePlaceholder} className="timePlaceholder" alt="..." />
         <p className="spot">{!station ? "Loading..." : station.spot}</p>
@@ -40,6 +38,7 @@ function Blurb(props) {
             {!station ? "Loading..." : station.description}
           </p>
         </div>
+        {/*Start Quest*/}
         <div className="ButtonDecoration">
           <Link to="/questa" style={{ textDecoration: "none" }}>
             <Buttons type="basic" text="Station beginnen" />

@@ -1,7 +1,8 @@
 import React from "react";
-import styles from "./CategoryCard.module.css";
 import { Link } from "react-router-dom";
+import styles from "./CategoryCard.module.css";
 
+//*component: Display all possible Categories to choose from
 function CategoryCard() {
   return (
     <div className={styles.Category}>

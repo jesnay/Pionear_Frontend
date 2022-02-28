@@ -3,6 +3,7 @@ const db = require("../database.js");
 class Station {
   constructor() {}
 
+  //Get all Data about Station from Database
   static async getAll(id) {
     return new Promise((resolve, reject) => {
       db.get(`SELECT * FROM stations WHERE stationID=${id};`, (err, rows) => {

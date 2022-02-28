@@ -1,31 +1,13 @@
-/* @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro"); */
-
-/*.Map {
-  width: 100%;
-  height: auto;
-  position: absolute;
-}*/
-
-.Map :global .Brightness {
-  /*filter: brightness(60%);
-  background-color: rgb(199, 199, 199);*/
-}
-
 .Map :global .MapImage {
   width: 100%;
   height: auto;
   position: absolute;
 }
-
-.Map :global .CategoryButton {
-  width: 50px;
+.Map :global .MapImageBrightness {
+  width: 100%;
   height: auto;
-  position: relative;
-  margin-left: auto;
-  margin-right: auto;
-  display: block;
-  top: 100px;
-  /* border-radius: 0px; */
+  position: absolute;
+  filter: brightness(60%);
 }
 
 /*.Map :global .circleContainer {

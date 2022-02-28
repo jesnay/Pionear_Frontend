@@ -1,10 +1,10 @@
 import React from "react";
 import styles from "./PreviewCard.module.css";
 import { GetStation } from "../../ConnectionToDatabase.js";
-
 import StationImg from "../../assets/images/Stations/4_Affordanz/Rechteck 609 klein.png";
 import locationImg from "../../assets/images/Icons/location-inactive.png";
 
+//*component: Preview of a Station
 function PreviewCard(props) {
   let stationID = 4;
   let station = GetStation(stationID);

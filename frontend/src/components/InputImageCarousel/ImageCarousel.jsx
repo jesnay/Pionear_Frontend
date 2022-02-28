@@ -1,11 +1,10 @@
-import styles from "./ImageCarousel.module.css";
 import React from "react";
-// import { Carousel } from "react-bootstrap";
-
+import styles from "./ImageCarousel.module.css";
 import OwlCarousel from "react-owl-carousel";
 import "owl.carousel/dist/assets/owl.carousel.css";
 import "owl.carousel/dist/assets/owl.theme.default.css";
 
+//*component: Image Gallery
 function ImageCarousel({ img1, img2, img3 }) {
   return (
     <div className={styles.Image}>

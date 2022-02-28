@@ -36,7 +36,6 @@ app.get("/api/user/:id", async function (req, res) {
   const userID = req.params.id;
   const user = await User.getAll(userID);
   res.json({ name: user.name, email: user.email });
-  //console.log(user.name);
 });
 
 //*Save given Data into Database

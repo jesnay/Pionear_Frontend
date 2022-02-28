@@ -1,18 +1,22 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import styles from "./Quest.module.css";
 import QuestTextBox from "../../components/QuestTextBox/QuestTextBox.jsx";
 import QuestTextBoxInput from "../../components/QuestTextBoxInput/QuestTextBoxInput.jsx";
-import Wave from "../../assets/images/Waves/QuestWave_V2.png";
 import QuestPhotoPreview from "../../components/QuestPhotoPreview/QuestPhotoPreview.jsx";
-import userImage from "../../assets/images/Stations/4_Affordanz/quest_userImage.jpg";
-import { Link } from "react-router-dom";
-import { GetStation, SetAnswer } from "../../ConnectionToDatabase.js";
+import { SetAnswer } from "../../ConnectionToDatabase.js";
 import Buttons from "../../components/Buttons/Buttons.jsx";
+import Wave from "../../assets/images/Waves/QuestWave_V2.png";
+import userImage from "../../assets/images/Stations/4_Affordanz/quest_userImage.jpg";
 import x from "../../assets/buttons/x.png";
 
+//*page: 2 different Quests: Take an Image & Type in some Terms
+
+//Quest: Take Picture
 function QuestTakeImage() {
   return (
     <div className={styles.Quest}>
+      {/*Header & Background*/}
       <div>
         <img className="questWave" src={Wave} alt="backgroundWave" />
       </div>
@@ -25,11 +29,13 @@ function QuestTakeImage() {
           davon ein Foto.
         </p>
       </div>
+      {/*Opens your Phone Camera*/}
       <div className="PhotoButton">
         <Link to="/questb">
           <Buttons type="image" />
         </Link>
       </div>
+      {/*Skip taking Picture*/}
       <div className="SkipButton">
         <Link to="/questc">
           <Buttons type="inactive" text="Ohne Foto" />
@@ -38,9 +44,12 @@ function QuestTakeImage() {
     </div>
   );
 }
+
+//Quest: See taken Picture
 function QuestPreviewImage() {
   return (
     <div className={styles.Quest}>
+      {/*Header & Background*/}
       <div>
         <img className="questWave" src={Wave} alt="backgroundWave" />
       </div>
@@ -53,10 +62,12 @@ function QuestPreviewImage() {
           davon ein Foto.
         </p>
       </div>
+      {/*Preview of the taken Picture*/}
       <div className="PhotoPreview">
         <QuestPhotoPreview image={userImage} />
       </div>
       <div>
+        {/*Go to next Quest*/}
         <div className="NextQuest">
           <Link to="/questc">
             <Buttons type="basic" text="Weiter" />
@@ -66,15 +77,20 @@ function QuestPreviewImage() {
     </div>
   );
 }
+
+//Quest: Type in Terms
 function QuestUserInput() {
+  //Array of User Inputs
   let [input, setInput] = React.useState([]);
 
+  //saves typed Term in Array
   const handleCallback = (childData) => {
     if (childData !== "" && childData.trim().length !== 0) {
       setInput([...input, { childData }]);
     }
   };
 
+  //deletes Term out of Array
   function handleRemove(childData) {
     let index = input.indexOf(childData);
     console.log(index);
@@ -87,6 +103,7 @@ function QuestUserInput() {
   }
   return (
     <div className={styles.Quest}>
+      {/*Header & Background*/}
       <div>
         <img className="questWave" src={Wave} alt="backgroundWave" />
       </div>
@@ -97,13 +114,16 @@ function QuestUserInput() {
           Gedanken zu dem ausgesuchten Objekt auf.
         </p>
       </div>
+      {/*Text Box to type in -> Submit with Enter*/}
       <div className="UserTyping">
         <QuestTextBox func={handleCallback} />
       </div>
+      {/*Show the Users Input*/}
       <div className="InputList">
         <div className="UserInput">
           <QuestTextBoxInput input={input} />
         </div>
+        {/*Delete specific Input*/}
         {/*<div className="delete">
           {input.map((input) => (
             <button
@@ -118,7 +138,7 @@ function QuestUserInput() {
           ))}
             </div>*/}
       </div>
-
+      {/*End Quest and save Input in Database*/}
       <div className="EndQuest">
         <Link to="/input">
           <button

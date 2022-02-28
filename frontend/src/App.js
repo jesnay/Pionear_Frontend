@@ -1,9 +1,7 @@
 import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-// import Test from "./pages/Test/Test.jsx";
 import Map from "./pages/Map/Map.jsx";
 import Input from "./pages/Input/Input.jsx";
-//import Blurb from "./components/Blurb/Blurb.jsx";
 import {
   QuestTakeImage,
   QuestPreviewImage,
@@ -11,7 +9,6 @@ import {
 } from "./pages/Quest/Quest.jsx";
 import QuestAnswers from "./pages/QuestAnswers/QuestAnswers.jsx";
 import Categroy from "./pages/Category/Category.jsx";
-import QuestFinished from "./components/QuestFinished/QuestFinished.jsx";
 
 function App() {
   return (

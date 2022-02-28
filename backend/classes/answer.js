@@ -3,6 +3,7 @@ const db = require("../database.js");
 class Answer {
   constructor() {}
 
+  //Save new Answers into Database
   static async save(userID, answer, stationID) {
     return new Promise((resolve, reject) => {
       const sql = db.prepare(

@@ -1,4 +1,4 @@
-//*Folgende Google Map Integration funktioniert nur auf Jennifers Rechner. Die Google Map API funktioniert nur kostenpflichtig auf anderen Rechnern.
+//*The following Google Map integration only works on Jennifer's computer. Unfortunately, to make this available to everyone would incur costs.
 
 // import Map from "google-map-react";
 // import p3Style from "./MapStyle";

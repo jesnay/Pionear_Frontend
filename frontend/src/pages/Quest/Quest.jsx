@@ -7,6 +7,8 @@ import QuestPhotoPreview from "../../components/QuestPhotoPreview/QuestPhotoPrev
 import userImage from "../../assets/images/Stations/4_Affordanz/quest_userImage.jpg";
 import { Link } from "react-router-dom";
 import { GetStation, SetAnswer } from "../../ConnectionToDatabase.js";
+import Buttons from "../../components/Buttons/Buttons.jsx";
+import x from "../../assets/buttons/x.png";
 
 function QuestTakeImage() {
   return (
@@ -25,7 +27,12 @@ function QuestTakeImage() {
       </div>
       <div className="PhotoButton">
         <Link to="/questb">
-          <button>take pic</button>
+          <Buttons type="image" />
+        </Link>
+      </div>
+      <div className="SkipButton">
+        <Link to="/questc">
+          <Buttons type="inactive" text="Ohne Foto" />
         </Link>
       </div>
     </div>
@@ -50,9 +57,11 @@ function QuestPreviewImage() {
         <QuestPhotoPreview image={userImage} />
       </div>
       <div>
-        <Link to="/questc">
-          <button>weiter</button>
-        </Link>
+        <div className="NextQuest">
+          <Link to="/questc">
+            <Buttons type="basic" text="Weiter" />
+          </Link>
+        </div>
       </div>
     </div>
   );
@@ -91,25 +100,29 @@ function QuestUserInput() {
       <div className="UserTyping">
         <QuestTextBox func={handleCallback} />
       </div>
-      <div className="UserInput">
-        <QuestTextBoxInput input={input} />
+      <div className="InputList">
+        <div className="UserInput">
+          <QuestTextBoxInput input={input} />
+        </div>
+        {/*<div className="delete">
+          {input.map((input) => (
+            <button
+              className="deleteButton"
+              key={input.childData}
+              onClick={() => {
+                handleRemove(input, input.childData);
+              }}
+            >
+              <img src={x}></img>{" "}
+            </button>
+          ))}
+            </div>*/}
       </div>
-      <div>
-        {input.map((input) => (
-          <button
-            className={styles.deleteButton}
-            key={input.childData}
-            onClick={() => {
-              handleRemove(input, input.childData);
-            }}
-          >
-            1
-          </button>
-        ))}
-      </div>
-      <div>
+
+      <div className="EndQuest">
         <Link to="/input">
           <button
+            className="EndQuestButton"
             onClick={() => {
               let dbArray = [];
               for (let i = 0; i < input.length; i++) {
@@ -123,7 +136,7 @@ function QuestUserInput() {
               SetAnswer(answer);
             }}
           >
-            end quest
+            Weiter
           </button>
         </Link>
       </div>

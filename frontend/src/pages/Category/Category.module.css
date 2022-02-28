@@ -1,0 +1,11 @@
+.Map :global .MapImage {
+  width: 100%;
+  height: auto;
+  position: absolute;
+  filter: brightness(60%);
+}
+
+.Map :global .CategoryCard {
+  position: relative;
+  padding-top: 65px;
+}

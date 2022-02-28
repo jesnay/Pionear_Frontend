@@ -1,0 +1,28 @@
+.Category {
+  margin: auto;
+  width: 330px;
+  height: 750px;
+  border: none;
+  background-color: rgba(255, 255, 255, 1);
+
+  border-radius: 15px;
+}
+.Category :global p {
+  font-size: 26px;
+  text-align: center;
+  padding-top: 25px;
+}
+.Category :global button {
+  margin-left: 20px;
+  font-size: 22px;
+  padding-left: 20px;
+  padding-right: 20px;
+  color: rgba(255, 255, 255, 1);
+  width: 290px;
+  height: 130px;
+  border-radius: 20px;
+  border: none;
+  background-color: rgba(38, 121, 120, 1);
+
+  margin-bottom: 25px;
+}

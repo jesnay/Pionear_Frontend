@@ -11,8 +11,11 @@
 .UserAnswers :global .BlurEffect {
   filter: brightness(60%);
   background-color: rgb(199, 199, 199);
+  height: 844px;
+  width: 100%;
+  position: absolute;
+  overflow: hidden;
 }
-
 .UserAnswers :global h1 {
   font-family: "Outfit-SemiBold";
   font-size: 32px;
@@ -48,9 +51,31 @@
 }
 
 .UserAnswers :global .QuestAnswerCard {
-  position: absolute;
-  margin-top: -750px;
-  margin-left: 20px;
+  position: relative;
+  padding-top: 170px;
 }
-
+.UserAnswers :global .ExitCard {
+  position: relative;
+  float: right;
+  padding-right: 20px;
+}
+.UserAnswers :global .ExitCardButton {
+  height: 26px;
+  width: 26px;
+  padding-bottom: 27px;
+  background-color: rgba(255, 255, 255, 1);
+  box-shadow: 0px 8px 10px rgba(53, 66, 89, 0.25);
+  border-radius: 40px;
+  border: none;
+  margin-bottom: 5px;
+}
+.UserAnswers :global .Answers {
+  width: 100%;
+  height: auto;
+  position: absolute;
+}
+.UserAnswers :global .EndStationButton {
+  text-align: center;
+  margin-bottom: 30px;
+}
 /*filter: blur(4px);*/

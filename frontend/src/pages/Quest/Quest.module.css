@@ -2,9 +2,13 @@
   margin-top: 100px;
   margin-left: 30px;
 }
+.Quest :global .InputList {
+  height: 383px;
+}
 .Quest :global .UserInput {
   margin-top: 30px;
   margin-left: 30px;
+  position: absolute;
 }
 
 .Quest :global .questWave {
@@ -43,4 +47,50 @@
 .Quest :global .PhotoPreview {
   text-align: center;
   margin-top: 75px;
+}
+.Quest :global .PhotoButton {
+  text-align: center;
+  margin-top: 160px;
+}
+.Quest :global .SkipButton {
+  text-align: center;
+  margin-top: 230px;
+}
+.Quest :global .NextQuest {
+  text-align: center;
+  margin-top: 20px;
+}
+.Quest :global .EndQuest {
+  text-align: center;
+  margin-bottom: 80px;
+}
+.Quest :global .EndQuestButton {
+  height: 50px;
+  width: fit-content;
+  padding-left: 30px;
+  padding-right: 30px;
+  background-color: rgba(53, 66, 89, 1);
+  color: rgba(255, 255, 255, 1);
+  font-size: 24px;
+  font-family: "Outfit-Light";
+  border-radius: 40px;
+  border: none;
+  box-shadow: 0px 5px 8px rgba(53, 66, 89, 0.25);
+}
+
+.Quest :global .deleteButton {
+  height: 26px;
+  width: 26px;
+  padding-bottom: 27px;
+  background-color: rgba(255, 255, 255, 1);
+  box-shadow: 0px 8px 10px rgba(53, 66, 89, 0.25);
+  border-radius: 40px;
+  border: none;
+}
+
+.Quest :global .delete {
+  height: 26px;
+  width: 26px;
+  padding-left: 135px;
+  padding-top: 15px;
 }

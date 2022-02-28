@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import styles from "./QuestAnswers.module.css";
 import QuestAnswerCard from "../../components/QuestAnswerCard/QuestAnswerCard.jsx";
-
+import Buttons from "../../components/Buttons/Buttons.jsx";
 import QuestAnswerList from "../../components/QuestAnwerList/QuestAnswerList.jsx";
 import Wave from "../../assets/images/Waves/QuestWave_V2.png";
 import user0 from "../../assets/images/QuestAnswers/user0.jpg";
@@ -13,6 +13,7 @@ import user5 from "../../assets/images/QuestAnswers/user5.jpg";
 import user6 from "../../assets/images/QuestAnswers/user6.jpg";
 import user7 from "../../assets/images/QuestAnswers/user7.jpg";
 import { Link } from "react-router-dom";
+import x from "../../assets/buttons/x.png";
 
 function QuestAnswers() {
   const [user, setUser] = React.useState([
@@ -76,7 +77,7 @@ function QuestAnswers() {
 
   return (
     <div className={styles.UserAnswers}>
-      <div className={state ? "BlurEffect" : ""}>
+      <div className={state ? "BlurEffect" : "Answers"}>
         <div>
           <img className="questWave" src={Wave} alt="backgroundWave" />
         </div>
@@ -100,25 +101,27 @@ function QuestAnswers() {
             <QuestAnswerList func={openImage} user={user[7]} />
           </div>
         </div>
-        <div>
+        <div className="EndStationButton">
           <Link to="/map">
-            <button>end station</button>
+            <Buttons type="basic" text="Station beenden" />
           </Link>
         </div>
       </div>
 
       <div className="QuestAnswerCard">
-        {console.log(userCard)}
-        {state ? <QuestAnswerCard user={userCard} /> : null}
         {state ? (
-          <button
-            onClick={() => {
-              setState(false);
-            }}
-          >
-            close
-          </button>
+          <div className="ExitCard">
+            <button
+              className="ExitCardButton"
+              onClick={() => {
+                setState(false);
+              }}
+            >
+              <img src={x} />
+            </button>
+          </div>
         ) : null}
+        {state ? <QuestAnswerCard user={userCard} /> : null}
       </div>
     </div>
   );

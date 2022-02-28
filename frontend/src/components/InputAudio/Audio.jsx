@@ -1,20 +1,19 @@
 import styles from "./Audio.module.css";
 import React from "react";
-//import Audio4 from "../../assets/audio/4_Affordanz.mp3";
+import input from "../../assets/audio/input.mp3";
 
 function Audio() {
   return (
     <div>
-      <p>hier kommt audio hin</p>
-      {/*<audio
+      <audio
         controls="controls"
         className={styles.Audio}
         controlsList="noplaybackrate"
       >
-        <source src={Audio4} type="audio/ogg" />
-        <source src={Audio4} type="audio/mpeg" />
+        <source src={input} type="audio/ogg" />
+        <source src={input} type="audio/mpeg" />
         Your browser does not support the audio element.
-      </audio>*/}
+      </audio>
     </div>
   );
 }

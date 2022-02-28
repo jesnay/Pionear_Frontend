@@ -7,7 +7,6 @@ function GetStation(stationID) {
     fetch(`/api/station/${stationID}`)
       .then((res) => res.json())
       .then((station) => setStation(station));
-    console.log("getstationdata");
   }, []);
 
   //*mit React.useEffect

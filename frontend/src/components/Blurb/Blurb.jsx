@@ -9,23 +9,19 @@ import locationImg from "../../assets/images/Icons/location-active.png";
 import timePlaceholder from "../../assets/images/Icons/time.png";
 import Buttons from "../../components/Buttons/Buttons.jsx";
 
-function Blurb() {
+function Blurb(props) {
   let stationID = 4;
   let categoryID = 1;
   let station = GetStation(stationID);
-  let answer = {
-    userID: 20,
-    text: ["Eins", "Zwei", "Drei"],
-    stationID: 5,
-    categoryID,
+  const closeBlurb = () => {
+    props.func();
   };
-
   return (
     <div className={styles.Blurb}>
       <div className="card">
         {/* Hier gebauten Button einbauen */}
         <div className="Close">
-          <Buttons type="close" />
+          <Buttons type="close" func={closeBlurb} />
         </div>
         {/* <div className="CategoryButton">
           <Buttons type="category" />
@@ -46,7 +42,7 @@ function Blurb() {
         </div>
         <div className="ButtonDecoration">
           <Link to="/questa" style={{ textDecoration: "none" }}>
-            <button className="button">Station beginnen</button>
+            <Buttons type="basic" text="Station beginnen" />
           </Link>
         </div>
 

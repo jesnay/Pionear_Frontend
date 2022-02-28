@@ -1,15 +1,19 @@
 import React from "react";
-import "./Category.module.css";
-import { Link } from "react-router-dom";
+import styles from "./Category.module.css";
+import CategoryCard from "../../components/CategoryCard/CategoryCard.jsx";
+import MapImage from "../../assets/images/Map.png";
 
 function Category() {
   return (
     <div>
-      <p>Hier die Category Componenten einfügen</p>
-      <Link to="/map">
-      <div className="card"></div>
-        <button>Weiter</button>
-      </Link>
+      <div className={styles.Map}>
+        <div className="Brightness">
+          <img className="MapImage" src={MapImage} alt="MapImage" />
+        </div>
+        <div className="CategoryCard">
+          <CategoryCard />
+        </div>
+      </div>
     </div>
   );
 }

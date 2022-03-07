@@ -10,7 +10,7 @@ function QuestAnswerList(props) {
           props.func(props.user.id);
         }}
       >
-        <img src={props.user.image} />
+        <img src={props.user.image} alt="" />
       </button>
     </div>
   );

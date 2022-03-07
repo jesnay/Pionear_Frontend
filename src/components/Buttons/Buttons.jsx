@@ -27,7 +27,7 @@ function Buttons(props) {
             props.func();
           }}
         >
-          <img src={x}></img>
+          <img src={x} alt=""></img>
         </button>
       </div>
     );
@@ -41,7 +41,7 @@ function Buttons(props) {
     return (
       <div className={styles.Buttons}>
         <button className="CategoryButton">
-          <img src={llll}></img>
+          <img src={llll} alt=""></img>
         </button>
       </div>
     );
@@ -49,7 +49,7 @@ function Buttons(props) {
     return (
       <div className={styles.Buttons}>
         <button className="ImageButton">
-          <img src={image}></img>
+          <img src={image} alt=""></img>
         </button>
       </div>
     );

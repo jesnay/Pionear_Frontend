@@ -20,8 +20,8 @@ function QuestAnswerPreview() {
         <p>Letzte Aktivität vor 2h</p>
       </div>
       <div>
-        <img className="Preview1" src={user0} />
-        <img className="Preview2" src={user1} />
+        <img className="Preview1" src={user0} alt="" />
+        <img className="Preview2" src={user1} alt="" />
       </div>
     </div>
   );

@@ -5,7 +5,7 @@ import styles from "./QuestPhotoPreview.module.css";
 function QuestPhotoPreview({ image }) {
   return (
     <div className={styles.PhotoPreview}>
-      <img src={image} />
+      <img src={image} alt="" />
     </div>
   );
 }

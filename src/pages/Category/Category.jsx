@@ -10,7 +10,7 @@ function Category() {
       <div className={styles.Map}>
         {/* Display Map in Background*/}
         <div className="Brightness">
-          <img className="MapImage" src={MapImage} alt="MapImage" />
+          {/* <img className="MapImage" src={MapImage} alt="MapImage" /> */}
         </div>
         {/* Display multiple Categories*/}
         <div className="CategoryCard">

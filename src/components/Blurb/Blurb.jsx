@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import styles from "./Blurb.module.css";
 import Buttons from "../../components/Buttons/Buttons.jsx";
-import { GetStation } from "../../ConnectionToDatabase.js";
+//import { GetStation } from "../../ConnectionToDatabase.js";
 import ImgStation from "../../assets/images/Stations/4_Affordanz/Rechteck 609.png";
 import ImgWalk from "../../assets/images/Icons/walking.png";
 import locationImg from "../../assets/images/Icons/location-active.png";
@@ -10,8 +10,8 @@ import timePlaceholder from "../../assets/images/Icons/time.png";
 
 //*component: Shows Information about Station -> Gets Data out of database as an example
 function Blurb(props) {
-  let stationID = 4;
-  let station = GetStation(stationID);
+  //let stationID = 4;
+  //let station = GetStation(stationID);
 
   //closes Blurb
   const closeBlurb = () => {
@@ -25,9 +25,9 @@ function Blurb(props) {
         <div className="Close">
           <Buttons type="close" func={closeBlurb} />
         </div>
-        <h1>{!station ? "Loading..." : station.topic}</h1>
+        <h1>Affordanz</h1>
         <img src={timePlaceholder} className="timePlaceholder" alt="..." />
-        <p className="spot">{!station ? "Loading..." : station.spot}</p>
+        <p className="spot">Unibibliothek: Handschriften</p>
         <img className="stationImage" src={ImgStation} alt="..." />
         <div className="WalkingTime-Container">
           <img className="WalkingImg" src={ImgWalk} alt="" />
@@ -35,7 +35,9 @@ function Blurb(props) {
         </div>
         <div>
           <p className="historicalText">
-            {!station ? "Loading..." : station.description}
+            Schriftstücke können mehr als nur gelesen werden. In diesem Kapitel
+            beschäftigen wir uns mit dem Begriff der Affordanz und inwiefern
+            auch Schriftstücke uns eine Affordanz bieten können.
           </p>
         </div>
         {/*Start Quest*/}

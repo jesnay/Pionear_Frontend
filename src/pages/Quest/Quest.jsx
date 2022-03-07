@@ -4,7 +4,7 @@ import styles from "./Quest.module.css";
 import QuestTextBox from "../../components/QuestTextBox/QuestTextBox.jsx";
 import QuestTextBoxInput from "../../components/QuestTextBoxInput/QuestTextBoxInput.jsx";
 import QuestPhotoPreview from "../../components/QuestPhotoPreview/QuestPhotoPreview.jsx";
-import { SetAnswer } from "../../ConnectionToDatabase.js";
+//import { SetAnswer } from "../../ConnectionToDatabase.js";
 import Buttons from "../../components/Buttons/Buttons.jsx";
 import Wave from "../../assets/images/Waves/QuestWave_V2.png";
 import userImage from "../../assets/images/Stations/4_Affordanz/quest_userImage.jpg";
@@ -144,6 +144,7 @@ function QuestUserInput() {
           <button
             className="EndQuestButton"
             onClick={() => {
+              /*
               let dbArray = [];
               for (let i = 0; i < input.length; i++) {
                 dbArray[i] = input[i].childData;
@@ -154,6 +155,9 @@ function QuestUserInput() {
                 stationID: 5,
               };
               SetAnswer(answer);
+              */ console.log(
+                "save answer into Database"
+              );
             }}
           >
             Weiter

@@ -122,7 +122,7 @@ function QuestAnswers() {
                 setState(false);
               }}
             >
-              <img src={x} />
+              <img src={x} alt="" />
             </button>
           </div>
         ) : null}

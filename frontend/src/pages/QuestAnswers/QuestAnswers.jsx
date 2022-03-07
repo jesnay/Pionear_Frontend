@@ -27,37 +27,37 @@ function QuestAnswers() {
     {
       id: 1,
       image: user1,
-      answers: ["1", "b"],
+      answers: ["xxxxx", "xx"],
     },
     {
       id: 2,
       image: user2,
-      answers: ["a", "2"],
+      answers: ["xxxxxxxxxxxxxxx", "xxxx"],
     },
     {
       id: 3,
       image: user3,
-      answers: ["3", "b"],
+      answers: ["x", "xxxxxxxxxx"],
     },
     {
       id: 4,
       image: user4,
-      answers: ["a", "4"],
+      answers: ["xxxxx", "xxxxx"],
     },
     {
       id: 5,
       image: user5,
-      answers: ["5", "b"],
+      answers: ["xxxxxxxxxx", "xxxxxxxxxxxxxxxxxxxxxxxxx"],
     },
     {
       id: 6,
       image: user6,
-      answers: ["a", "6"],
+      answers: ["xxxxx", "x"],
     },
     {
       id: 7,
       image: user7,
-      answers: ["7", "b"],
+      answers: ["xx", "xxxxx"],
     },
   ]);
   const [state, setState] = React.useState(false);

@@ -10,14 +10,9 @@ function QuestTextBox(props) {
   const handleSubmit = (e) => {
     e.preventDefault();
     setInput("");
+    props.func(input);
   };
 
-  const handleKeypress = (e) => {
-    //it triggers by pressing the enter key
-    if (e.keyCode === 13) {
-      handleSubmit();
-    }
-  };
   return (
     <div className={styles.TextBox}>
       <div>
@@ -27,14 +22,13 @@ function QuestTextBox(props) {
               placeholder=""
               value={input}
               onChange={(e) => setInput(e.target.value)}
-              onKeyPress={handleKeypress}
             />
           </Form.Group>
           {/*Saves and dsplays term aufter submitting*/}
           <button
             className="button"
             onClick={() => {
-              props.func(input);
+              //props.func(input);
             }}
           >
             Submit

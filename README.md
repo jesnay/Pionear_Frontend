@@ -6,6 +6,8 @@
 
 1. Open the link to [Pionear](https://pionear-frontend.vercel.app) in your phone browser
 
+   > https://pionear-frontend.vercel.app
+
 2. Add to your Homescreen
 
 **iPhone:**
@@ -22,11 +24,13 @@
 
 4. Open "App" on Homescreen
 
-⚠️ The React Applikation is build only for the **iPhone 12 pro** (390 x 844). The layout on your phone may differ from the original.
+⚠️ THE REACT APPLIKATION IS CURRENTLY BUILD ONLY FOR THE **IPHONE 12 PRO** (390 X 844). THE LAYOUT ON YOUR PHONE MAY DIFFER FROM THE ORIGINAL.
 
 ### Option B: In your Browser
 
 1. Open the link to [Pionear](https://pionear-frontend.vercel.app) in your desktop browser
+
+   > https://pionear-frontend.vercel.app
 
 2. Right-Click on "Inspect Elements"
 
